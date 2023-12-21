@@ -1,6 +1,6 @@
-# Work-Day-Scheduler
+# GoFoodie
 
-Welcome to the Work-Day-Scheduler repository!
+Welcome to the GoFoodie repository!
 
 ## Table of content
 
