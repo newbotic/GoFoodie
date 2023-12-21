@@ -1,35 +1,61 @@
-# GoFoodie
-With your team, you'll conceive and execute a design that solves a real-world problem by integrating data received from multiple server-side API requests. You'll also learn about agile development methodologies to help you work collaboratively. You'll implement feature and bug fixes using Git branch workflow and pull requests.
+# Work-Day-Scheduler
 
-You'll write your own user stories and acceptance criteria in GitHub Issues to help your team stay on track with the project. Using GitHub Project to track the status of your project tasks will help you understand the benefits of Kanban boards.
+Welcome to the Work-Day-Scheduler repository!
 
-You and your group will use everything you’ve learned over the past six modules to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfill the following requirements:
+## Table of content
 
-Use Bootstrap.
+[About](#about)
+[Screenshot](#screenshot)
+[Link to deployed app](#Link-to-deployed-app)
+[License](#license)
+[Getting Started](#getting-started)
+[Prerequisites](#prerequisites)
+[Installation](#installation)
+[User-Story](#User-Story)
+[Usage](#Usage)
+[Contributing](#contributing)
 
-Be deployed to GitHub Pages.
+## About
 
-Be interactive (in other words, accept and respond to user input).
+Welcome to the Work Day Scheduler app! This simple calendar application allows users to efficiently manage their daily schedules by adding important events for each hour of the day. The app is designed to run in the browser and features dynamically updated HTML and CSS powered by jQuery. Additionally, it utilizes the Day.js library for effective manipulation of date and time.
 
-Use at least two server-side APIsLinks to an external site..
+## Screenshot
 
-Use modals instead of alerts, confirms, or prompts.
+![Screenshot](./assets/images/)
 
-Use client-side storage to store persistent data.
+## Link to deployed app
 
-Be responsive.
+https://newbotic.github.io/GoFoodie/
 
-Have a polished UI.
+## License
 
-Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, and so on).
+Mit license
 
-Have a quality README (including a unique name, description, technologies used, screenshot, and link to the deployed application).
+## Getting Started
 
-(User steps)
-Pseudo code start: 
-1. Stats are entered: Jumbotron, NavBar, Form using Bootstrap, eventListener to submit form;
-2. calculates the bmi: FitnessCalculator Api(or BMI)/ print the daily kcal goal/ localStorage Kcal 
-3. Based on the BMI range, we create if statements and we define what range needed for healthy wieght: lose weight/gain weight/ keep waight (eg if BMI= less than 2000, calorie goal is..)
-        save user Choice
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
-4. based on the calorie goal, the recipe api will generate recipes that matches calorie goal: RecipeAPI/ filter recipes for ingredients or Kcal
+### Prerequisites
+
+Web browser (e.g., Chrome, Firefox)
+Code editor (optional)
+
+### Installation
+
+1. Clone the repository: git clone [https://github.com/newbotic/Work-Day-Scheduler]
+2. Open the index.html file in your preferred web browser.
+
+### User Story
+
+As an employee with a busy schedule, I want to add important events to a daily planner so that I can manage my time effectively.
+
+### Usage
+Click on a timeblock to enter an event for that hour.
+Click the save button to store the event in local storage.
+The color of each timeblock will change dynamically based on whether it is in the past, present, or future.
+Events will persist between page refreshes.
+
+### Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests.
+
