@@ -47,5 +47,5 @@ fetch(queryURL)
         return response.json();
     }).then (function(data){
         console.log(data);
-        console.log(data.hits(0).recipe)
+        console.log(data.hits[0].recipe)
     })
