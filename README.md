@@ -1,61 +1,67 @@
-# GoFoodie
+<h1>GoFoodie</h1>
 
-Welcome to the GoFoodie repository!
+<h2>Welcome to the GoFoodie Readme!</h2>
 
-## Table of content
+## Table of Contents
 
-[About](#about)
-[Screenshot](#screenshot)
-[Link to deployed app](#Link-to-deployed-app)
-[License](#license)
-[Getting Started](#getting-started)
-[Prerequisites](#prerequisites)
-[Installation](#installation)
-[User-Story](#User-Story)
-[Usage](#Usage)
-[Contributing](#contributing)
+- [About](#about)
+- [Screenshot](#screenshot)
+- [Link to Deployed App](#link-to-deployed-app)
+- [License](#license)
+- [Getting Started](#getting-started)
+- [User Story](#user-story)
+- [Usage](#usage)
+- [Contributing](#contributing)
 
 ## About
 
-Welcome to the Work Day Scheduler app! This simple calendar application allows users to efficiently manage their daily schedules by adding important events for each hour of the day. The app is designed to run in the browser and features dynamically updated HTML and CSS powered by jQuery. Additionally, it utilizes the Day.js library for effective manipulation of date and time.
+GoFoodie is a web application developed by [Front-End Development Bootcamp Members] that serves as a comprehensive tool for users to track their daily calorie intake based on individual attributes.
+
+The platform offers personalized calorie targets for users aiming to lose, gain, or maintain their weight.
+
+Additionally, GoFoodie provides an extensive collection of recipes aligned with the user's calorie goals, allowing them to explore and prepare meals that fit their dietary needs.
 
 ## Screenshot
 
-![Screenshot](./assets/images/)
+[screenshot/images of the website will go here]
 
-## Link to deployed app
+## Link to Deployed Website
 
-https://newbotic.github.io/GoFoodie/
+Visit the deployed Website here:
 
 ## License
 
-Mit license
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Getting Started
 
-These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
+Prerequisites:
+To run this project locally, ensure you have the following installed:
 
-### Prerequisites
+Web browser (Chrome, Firefox, Safari, etc.)
+Installation
+To set up this project locally, follow these steps:
 
-Web browser (e.g., Chrome, Firefox)
-Code editor (optional)
+Clone this repository: git clone https://github.com/newbotic/GoFoodie.git
+Open the project folder in your code editor.
 
-### Installation
+## User Story
 
-1. Clone the repository: git clone [https://github.com/newbotic/Work-Day-Scheduler]
-2. Open the index.html file in your preferred web browser.
+As a health-conscious individual, I want to track my daily calorie intake based on my attributes to achieve my weight goals effectively. Additionally, I want access to a variety of recipes tailored to my calorie requirements to plan my meals conveniently.
 
-### User Story
+## Usage
 
-As an employee with a busy schedule, I want to add important events to a daily planner so that I can manage my time effectively.
+Access the deployed app.
 
-### Usage
-Click on a timeblock to enter an event for that hour.
-Click the save button to store the event in local storage.
-The color of each timeblock will change dynamically based on whether it is in the past, present, or future.
-Events will persist between page refreshes.
+Enter your attributes to calculate your recommended daily calorie intake.
 
-### Contributing
+Explore the collection of recipes tailored to your calorie goals.
 
-Contributions are welcome! Feel free to submit issues or pull requests.
+Enjoy a variety of meal options and plan your diet efficiently.
 
+## Development Team
+
+- Harry Hing
+- Cara-May Joseph
+- Marina Lacamino
+- Vasile Lacatusu
