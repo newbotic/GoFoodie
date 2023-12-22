@@ -48,7 +48,7 @@ const dataFromApi = result.data
 
 
 //Test 
-
+console.log(result.data.BMR);
 console.log(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
 console.log(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight gain"]['calory']}`);
 
