@@ -1,0 +1,96 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Section */
+.foodielogo {
+  width: 8%;
+}
+
+nav {
+  width: 100%;
+  overflow: auto;
+  background: black;
+}
+
+ul {
+  padding: 0%;
+  margin: 0 0 0 250px;
+  list-style: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  width: 100px;
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+li a:hover {
+  background: gray;
+  text-transform: uppercase;
+}
+
+.logo img {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 7%;
+}
+
+/* Main section */
+
+.main {
+  display: grid;
+  justify-content: center;
+  padding-top: 3%;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 3%;
+}
+
+.food-pic {
+  width: 40%;
+  border-radius: 10%;
+}
+
+.gym-pic {
+  width: 40%;
+  border-radius: 10%;
+}
+
+/* Stats Section */
+
+.stats {
+  display: grid;
+  justify-content: center;
+  color: white;
+  font-family: monospace;
+  padding-top: 8%;
+}
+
+.form-section {
+  padding-top: 4%;
+  width: 40%;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
