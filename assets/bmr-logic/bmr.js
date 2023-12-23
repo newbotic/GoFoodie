@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     
 
-
+//getting data from the user-----------------------------------------------------------------
 
 $('#submitBtn').on('click', async function(e){
 e.preventDefault();
@@ -14,6 +14,8 @@ const genderValue = $('#gender').val();
 const weightValue = $('#weight').val();
 const heightValue = $('#height').val();
 const activitylevelVal = $('#activitylevel').val();
+
+
 // console.log(ageValue)
 
 const url = `https://fitness-calculator.p.rapidapi.com/dailycalorie?age=${ageValue}&gender=${genderValue}&height=${heightValue}&weight=${weightValue}&activitylevel=${activitylevelVal}`;
@@ -47,22 +49,94 @@ try {
 const dataFromApi = result.data
 
 
-//Test //
+
 
 fetchData();
 
-const headDiv =$('<h3>').text(`Calory value for goal "weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
+
+
 console.log(result.data.BMR);
 console.log(`Calory value for goal " Weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
 console.log(`Calory value for goal "Weight gain": ${dataFromApi['goals']["Weight gain"]['calory']}`);
 
 
+//append results to the h3 elements
+// $('.bmr').text(result.data.BMR);
+
+const resultBasal = result.data.BMR;
+  const basal = $('#bmr');
+  basal.append(resultBasal);
+
+  $('#loss').text(`Calory value for goal " Weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
+  $('#gain').text(`Calory value for goal "Weight gain": ${dataFromApi['goals']["Weight gain"]['calory']}`);
+  
+// Return the relevant data as object
+
+return {
+  bmr: result.data.BMR,
+  goals: result.data.goals,
+};
+
+
+  //---------------------------------------------
+  
   } catch (error){
   console.error(error);
-  }// Create a string with the desired content
+  }
 
   }
 
+//-------------------------------------
 
-  //modified this is api branch
+console.log(bmr);// Use the returned data outside the fetchData function
+
+// console.log('BMR:', data.bmr);
+// console.log('Goals:', data.goals);
+
+
+//Function to divide calories
+
+const divideCalories = totalCalories => {
+  const breakfast = totalCalories * 0.35;
+  const lunch = totalCalories * 0.45;
+  const dinner = totalCalories * 0.20;
+
+  return {
+    breakfast: breakfast,
+    lunch: lunch,
+    dinner: dinner
+  };
+};
+
+
+const totalCalories = bmr; // Replace with your actual total calories
+const dividedCalories = divideCalories(totalCalories);
+
+console.log('Breakfast:', dividedCalories.breakfast);
+console.log('Lunch:', dividedCalories.lunch);
+console.log('Dinner:', dividedCalories.dinner);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//document ready
+
+
 });
+
+
+//-------------------------------------------------------------------------
+
+
+
