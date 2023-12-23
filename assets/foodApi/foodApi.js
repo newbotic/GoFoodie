@@ -20,7 +20,7 @@
 
 
 //fetch using edamam website and an online tutorial
-const calories = $("#calories");
+const calories = $("#calories").val();//To get the value of the input
 const appId = "a45305f0";
 const apiKey = "143d0f7d6fb84cad8676daa008b291cd" ;
 const endpoint = "https://api.edamam.com/search";
@@ -38,7 +38,8 @@ queryURL.searchParams.append("app_id", appId);
 queryURL.searchParams.append("app_key", apiKey);
 
 
-$(".Submit").on("submit", function (){
+$(".Submit").on("submit", function (event){
+    event.preventDefault();
     console.log(queryURL);
 })
 
@@ -47,5 +48,5 @@ fetch(queryURL)
         return response.json();
     }).then (function(data){
         console.log(data);
-        console.log(data.hits(0).recipe)
+        // console.log(data.hits[0].recipe)
     })

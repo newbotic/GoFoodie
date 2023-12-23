@@ -43,25 +43,68 @@ try {
       // console.log(result);
       const bmr = result.data.BMR;
       const goals = result.data.goals;
-// const dataSaved = JSON.stringify(result.data);
-const dataFromApi = result.data
+// const dataSaved = JSON.stringify(result.
+//Test 
+  const headDiv =$('<h3>').text(`Calory value for goal "weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
 
-
-//Test //
-
-fetchData();
-
-const headDiv =$('<h3>').text(`Calory value for goal "weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
 console.log(result.data.BMR);
-console.log(`Calory value for goal " Weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
-console.log(`Calory value for goal "Weight gain": ${dataFromApi['goals']["Weight gain"]['calory']}`);
+console.log(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
+console.log(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight gain"]['calory']}`);
+
+
+// Generate  buttons with the goals
 
 
   } catch (error){
   console.error(error);
   }// Create a string with the desired content
 
+
+
+
+
+
+
+
+
+// const h2Element = $('<h2>').text(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
+// const h3Element = $('<h2>').text(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight gain"]['calory']}`);
+
+
+localStorage.setItem('dataFromApi',dataSaved);
+      console.log('BMR',bmr);
+      // console.log('Goals',goals);
+  } catch (error) {
+      console.error(error);
   }
+  }
+
+  
+  // fetchData();
+
+
+//   function renderCalories(calorieValue) {
+//     const renderContainerDiv = $("#renderCaloriesDiv");
+  
+//     // Create a button element
+  
+  
+//     const buttonElement = $("<button>")
+//     .text(`Calorie Value: ${calorieValue}`)
+//     .click(function() {
+  
+//         // Event l
+       
+//         alert(`Button Clicked! Calorie Value: ${calorieValue}`);
+//       });
+  
+//     // Append the button to the result container
+//     renderContainerDiv.append(buttonElement);
+  
+
+
+
+
 
 
   //modified
