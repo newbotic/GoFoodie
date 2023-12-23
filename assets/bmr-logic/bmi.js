@@ -21,7 +21,7 @@
     }
     
     Call the async function
-    fetchData();
+    // fetchData();
     
     
     
