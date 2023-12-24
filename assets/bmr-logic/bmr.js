@@ -124,25 +124,25 @@ console.log(bmr);// Use the returned data outside the fetchData function
 
 //Function to divide calories
 
-const divideCalories = totalCalories => {
-  const breakfast = totalCalories * 0.35;
-  const lunch = totalCalories * 0.45;
-  const dinner = totalCalories * 0.20;
+// const divideCalories = totalCalories => {
+//   const breakfast = totalCalories * 0.35;
+//   const lunch = totalCalories * 0.45;
+//   const dinner = totalCalories * 0.20;
 
-  return {
-    breakfast: breakfast,
-    lunch: lunch,
-    dinner: dinner
-  };
-};
+//   return {
+//     breakfast: breakfast,
+//     lunch: lunch,
+//     dinner: dinner
+//   };
+// };
 
 
-const totalCalories = bmr; // Replace with your actual total calories
-const dividedCalories = divideCalories(totalCalories);
+// const totalCalories = bmr; // Replace with your actual total calories
+// const dividedCalories = divideCalories(totalCalories);
 
-console.log('Breakfast:', dividedCalories.breakfast);
-console.log('Lunch:', dividedCalories.lunch);
-console.log('Dinner:', dividedCalories.dinner);
+// console.log('Breakfast:', dividedCalories.breakfast);
+// console.log('Lunch:', dividedCalories.lunch);
+// console.log('Dinner:', dividedCalories.dinner);
 
 
 

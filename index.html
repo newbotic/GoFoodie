@@ -12,123 +12,135 @@
   <body>
 
 <!-- nav bar  start-->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Recipe</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- nav bar end -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#index.html">GoFoodie</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="foodie.html">Foodie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="go.html">Go</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- nav bar end -->
 
 <!-- grid start -->
 <div class="container text-center">
-    <div class="row">
-      <div class="col-9">
-        Column9
-        <!-- carousel start -->
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="row">
+    <!-- left column start-->
+    <div class="col-9">
+      <!-- carousel start -->
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- add src1 -->
+            <img src="./assets/images/pexels-andrea-piacquadio-866023.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
+          <div class="carousel-item">
+            <!-- add src2 -->
+            <img src="./assets/images/pexels-ella-olsson-1640772.jpg" class="d-block w-100" alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <!-- add src3 -->
+            <img src="./assets/images/pexels-lisa-fotios-1279330.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-<!-- form start -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="col-3">
-
-
-
-        Calculate BMR
-
-        <div class="form-check">
-          <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-          <label class="form-check-label" for="flexRadioDefault1">
-            Lose weight
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-          <label class="form-check-label " for="flexRadioDefault2">
-            Gain weight
-          </label>
-        </div>
-
-        <input class="form-control m-1 form-control-sm" type="text" placeholder=".Age" aria-label=".form-control-sm example">
-        
-        <select class="form-select m-1 form-select-sm" aria-label="Small select example">
-          <option selected>Gender</option>
-          <option value="1">Male</option>
-          <option value="2">Female</option>
-        </select>
-        <input class="form-control m-1 form-control-sm" type="text" placeholder="Weight in kg" aria-label=".form-control-sm example">
-        <input class="form-control m-1 form-control-sm" type="text" placeholder="Height in cm" aria-label=".form-control-sm example">
-        <select class="form-select m-1 form-select-sm" aria-label="Small select example">
-          <option selected>Activity level</option>
-          <option value="1">Sedentary: little or no exercise</option>
-          <option value="2">Exercise 1-3 times/week</option>
-          <option value="1">Exercise 4-5 times/week</option>
-          <option value="2">Daily exercise or intense exercise 3-4 times/week</option>
-          <option value="1">Male</option>
-          <option value="2">Female</option>
-
-        </select>
-
-
-        <button type="submit" class="btn m-2 btn-sm btn-primary">Submit</button>
-
+      <!-- carousel end -->
       </div>
+    <!-- left column end -->
+
+    <!-- right column start-->
+    <div class="col-3">
+      <!-- bmr form input start -->
+      <div class="form-check m-1">
+        <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Lose weight
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label " for="flexRadioDefault2">
+          Gain weight
+        </label>
+      </div>
+
+      <input class="form-control m-1 form-control-sm" type="text" placeholder=".Age" aria-label=".form-control-sm example">
+      
+      <select class="form-select m-1 form-select-sm" aria-label="Small select example">
+        <option selected>Gender</option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+      </select>
+      <input class="form-control m-1 form-control-sm" type="text" placeholder="Weight in kg" aria-label=".form-control-sm example">
+      <input class="form-control m-1 form-control-sm" type="text" placeholder="Height in cm" aria-label=".form-control-sm example">
+      <select class="form-select m-1 form-select-sm" aria-label="Small select example">
+        <option selected>Activity level</option>
+        <option value="1">Sedentary: little or no exercise</option>
+        <option value="2">Exercise 1-3 times/week</option>
+        <option value="3">Exercise 4-5 times/week</option>
+        <option value="4">Daily exercise or intense exercise 3-4 times/week</option>
+        <option value="5">Intense exercise 6-7 times/week</option>
+        <option value="6">Very intense exercise daily, or physical job</option>
+
+      </select>
+<!-- submit button start -->
+      <button type="submit" class="btn m-2 btn-sm btn-primary">Submit</button>
+<!-- submit button end -->
     </div>
+<!-- bmr form input end -->
+    </div>
+    <!-- right column end -->
   </div>
-
-
-<!-- serch food start -->
-<div class="input-group mb-5">
-  <input type="text" class="form-control" placeholder="Recipe" aria-label="Recipe " aria-describedby="button-addon2">
-  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
 </div>
+<!-- grid end -->
 
 
 
-<!-- card start -->
 
-<div class="card" style="width: 18rem;">
+<!-- search food start -->
+<div class="input-group m-3 p-5">
+  <input type="search" class="form-control rounded" placeholder="Search recipe" aria-label="Search" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
+</div>
+<!-- search food end -->
+
+
+<!-- card render food start -->
+
+<div class="card m-5" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -137,12 +149,17 @@
   </div>
 </div>
 
+<!-- card render food end -->
+
   <!-- grid end -->
 
   <!-- footer  start-->
 
 
-  <!-- script start -->
+  <!-- footer end -->
+
+
+  <!-- script jquery and js start -->
 
     <script
       src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
