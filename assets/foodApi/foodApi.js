@@ -1,57 +1,93 @@
-
+$(document).ready(function() {
 //13018f91
 
 //b07af7f92a084a54b723827439125e60
 
 
 //fetch using edamam website and an online tutorial
-const calories = $("#calories");
-const appId = "13018f91";
-const apiKey = "b07af7f92a084a54b723827439125e60" ;
-const endpoint = "https://api.edamam.com/search";
-
-
-var recipeDetails = "";
-var results = $("#results");
 let label = "";
 let image = "";
 let uri = "";
 
+async function fetchData() {
+const caloriesRequest = $("#recipeReqCal").val();
+const appId = "13018f91";
+const apiKey = "b07af7f92a084a54b723827439125e60" ;
+const endpoint = "https://api.edamam.com/search";
+
 const queryURL = new URL(endpoint);
-queryURL.searchParams.append("q", calories);
-queryURL.searchParams.append("app_id", appId);
-queryURL.searchParams.append("app_key", apiKey);
+  queryURL.searchParams.append("q", caloriesRequest);
+  queryURL.searchParams.append("app_id", appId);
+  queryURL.searchParams.append("app_key", apiKey);
 
-
-$(".Submit").on("submit", function (){
-    console.log(queryURL);
-})
-
-//?????? async ????????
-
-fetch(queryURL)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        // Check if 'hits' array exists in 'data'
-        if (data.hits && Array.isArray(data.hits)) {
-            // Access the first element of the 'hits' array
-            const firstRecipe = data.hits[0];
-            if (firstRecipe && firstRecipe.recipe) {
-                console.log(firstRecipe.recipe);
-            } else {
-                console.error("Invalid data 'recipe'  not found");
-            }
-        } else {
-            console.error("Invalid data ");
-        }
-    })
-    .catch(function(error){
-        console.error("Error fetching data:", error);
-    });
+  console.log(queryURL.toString()); 
 
 
 
-    //------------------------
+console.log(queryURL);//to be deleted
 
+// // var recipeDetails = "";
+
+
+
+// $("#search-recipe").on("click", async (e)=> {   //callback function
+    // e.preventDefault();
+
+
+try {
+    const response = await fetch(queryURL);
+    const data = await response.json();
+    console.log(data);
+    console.log(data.hits[0].recipe)
+
+
+// Example: Extract label, image, and uri
+if (data.hits && data.hits.length > 0) {
+    const firstRecipe = data.hits[0].recipe;
+    label = firstRecipe.label;
+    image = firstRecipe.image;
+    uri = firstRecipe.uri;
+
+    console.log("Label:", label);
+    console.log("Image:", image);
+    console.log("URI:", uri);
+}
+
+
+} catch (error) {
+    console.error("Error fetching data:", error);
+}
+
+}
+
+$("#search-recipe").on("click", async (e) => {
+    e.preventDefault();
+
+    
+    try {
+        // Wait for fetchData to complete
+        await fetchData();
+
+        // Update the card content with API data
+        $('#card-image').attr('src', image);
+        $('#card-title').text(label);
+        $('#card-text').text(`URI: ${uri}`);
+        $('#card-link').attr('href', uri);
+    } catch (error) {
+        console.error("Error updating card content:", error);
+    }
+
+// -------------------
+});
+
+
+    
+    
+    
+    
+    
+});
+
+//------------------------
+
+// ready ??????????

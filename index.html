@@ -14,7 +14,7 @@
 <!-- nav bar  start-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#index.html">GoFoodie</a>
+    <a class="navbar-brand" href="index.html">GoFoodie</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,7 +48,7 @@
     <div class="col-9">
       <!-- carousel start -->
 
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleIndicators" class="carousel slide m-2">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -132,20 +132,20 @@
 
 <!-- search food start -->
 <div class="input-group m-3 p-5">
-  <input type="search" class="form-control rounded" placeholder="Search recipe" aria-label="Search" aria-describedby="search-addon" />
-  <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
+  <input  id="recipeReqCal" type="search" class="form-control rounded" placeholder="Search recipe" aria-label="Search" aria-describedby="search-addon" />
+  <button  id="search-recipe" type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
 </div>
 <!-- search food end -->
 
 
 <!-- card render food start -->
 
-<div class="card m-5" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+<div id="content-recipe" class="card m-5" style="width: 18rem;">
+  <img id="card-image" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5  id="card-title" class="card-title">Card title</h5>
+    <p  id="card-text" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a  id="card-link" href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
