@@ -1,28 +1,13 @@
-//fetch using rapidApi
 
-// const settings = {
-// 	async: true,
-// 	crossDomain: true,
-// 	url: 'https://edamam-recipe-search.p.rapidapi.com/api/recipes/v2?type=public&co2EmissionsClass=A%2B&field%5B0%5D=uri&beta=true&random=true&cuisineType%5B0%5D=American&imageSize%5B0%5D=LARGE&mealType%5B0%5D=Breakfast&health%5B0%5D=alcohol-cocktail&diet%5B0%5D=balanced&dishType%5B0%5D=Biscuits%20and%20cookies',
-// 	method: 'GET',
-// 	headers: {
-// 		'Accept-Language': 'en',
-// 		'X-RapidAPI-Key': 'fcbbbc350fmshb87a02ecb446045p1cc7bejsn539be2ee3868',
-// 		'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
-// 	}
-// };
+//13018f91
 
-// $.ajax(settings).done(function (response) {
-// 	console.log(response);
-// });
-
-
+//b07af7f92a084a54b723827439125e60
 
 
 //fetch using edamam website and an online tutorial
 const calories = $("#calories");
-const appId = "a45305f0";
-const apiKey = "143d0f7d6fb84cad8676daa008b291cd" ;
+const appId = "13018f91";
+const apiKey = "b07af7f92a084a54b723827439125e60" ;
 const endpoint = "https://api.edamam.com/search";
 
 
@@ -42,10 +27,31 @@ $(".Submit").on("submit", function (){
     console.log(queryURL);
 })
 
+//?????? async ????????
+
 fetch(queryURL)
     .then(function(response){
         return response.json();
-    }).then (function(data){
-        console.log(data);
-        console.log(data.hits(0).recipe)
     })
+    .then(function(data){
+        // Check if 'hits' array exists in 'data'
+        if (data.hits && Array.isArray(data.hits)) {
+            // Access the first element of the 'hits' array
+            const firstRecipe = data.hits[0];
+            if (firstRecipe && firstRecipe.recipe) {
+                console.log(firstRecipe.recipe);
+            } else {
+                console.error("Invalid data 'recipe'  not found");
+            }
+        } else {
+            console.error("Invalid data ");
+        }
+    })
+    .catch(function(error){
+        console.error("Error fetching data:", error);
+    });
+
+
+
+    //------------------------
+

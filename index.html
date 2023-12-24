@@ -1,13 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-   <Div id="api">BMI</Div>
-   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js" ></script>
-</body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+  </head>
+  <body>
+
+<!-- nav bar  start-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Recipe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav bar end -->
+
+<!-- grid start -->
+<div class="container text-center">
+    <div class="row">
+      <div class="col-9">
+        Column9
+        <!-- carousel start -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+<!-- form start -->
+      </div>
+      <div class="col-3">
+
+
+
+        Calculate BMR
+
+        <div class="form-check">
+          <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Lose weight
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label " for="flexRadioDefault2">
+            Gain weight
+          </label>
+        </div>
+
+        <input class="form-control m-1 form-control-sm" type="text" placeholder=".Age" aria-label=".form-control-sm example">
+        
+        <select class="form-select m-1 form-select-sm" aria-label="Small select example">
+          <option selected>Gender</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+        </select>
+        <input class="form-control m-1 form-control-sm" type="text" placeholder="Weight in kg" aria-label=".form-control-sm example">
+        <input class="form-control m-1 form-control-sm" type="text" placeholder="Height in cm" aria-label=".form-control-sm example">
+        <select class="form-select m-1 form-select-sm" aria-label="Small select example">
+          <option selected>Activity level</option>
+          <option value="1">Sedentary: little or no exercise</option>
+          <option value="2">Exercise 1-3 times/week</option>
+          <option value="1">Exercise 4-5 times/week</option>
+          <option value="2">Daily exercise or intense exercise 3-4 times/week</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+
+        </select>
+
+
+        <button type="submit" class="btn m-2 btn-sm btn-primary">Submit</button>
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- serch food start -->
+<div class="input-group mb-5">
+  <input type="text" class="form-control" placeholder="Recipe" aria-label="Recipe " aria-describedby="button-addon2">
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+</div>
+
+
+
+<!-- card start -->
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+  <!-- grid end -->
+
+  <!-- footer  start-->
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- script start -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./assets/bmr-logic/bmr.js"></script>
+    <script src="./assets/foodApi/foodApi.js"></script>
+  </body>
 </html>

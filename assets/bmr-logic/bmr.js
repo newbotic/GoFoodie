@@ -5,15 +5,43 @@ $(document).ready(function() {
 
 //getting data from the user-----------------------------------------------------------------
 
-$('#submitBtn').on('click', async function(e){
-e.preventDefault();
+// $('#submitBtn').on('click', async function(e){
+// e.preventDefault();
+
+$('#bmrForm').submit((e)=> {
+  e.preventDefault();
 
 
-const ageValue  = $('#age').val();
-const genderValue = $('#gender').val();
-const weightValue = $('#weight').val();
-const heightValue = $('#height').val();
-const activitylevelVal = $('#activitylevel').val();
+};
+
+// const ageValue  = $('#age').val();
+// const genderValue = $('#gender').val();
+// const weightValue = $('#weight').val();
+// const heightValue = $('#height').val();
+// const activitylevelVal = $('#activitylevel').val();
+
+
+// Retrieve values from form fields
+const age = $('input[placeholder="Age"]').val();
+const gender = $('select[placeholder="Gender"]').val();
+const weight = $('input[placeholder="Weight in kg"]').val();
+const height = $('input[placeholder="Height in cm"]').val();
+const activityLevel = $('select[placeholder="Activity level"]').val();
+
+// Do something with the collected information, e.g., display it
+console.log("Collected Information:");
+console.log("Age:", age);
+console.log("Gender:", gender);
+console.log("Weight:", weight);
+console.log("Height:", height);
+console.log("Activity Level:", activityLevel);
+
+// Add any further processing logic here
+
+// Reset the form if needed
+$(this).trigger("reset");
+});
+
 
 
 // console.log(ageValue)
@@ -27,7 +55,7 @@ try {
 } catch (error) {
   console.error(error);
 }
-});
+// });
     // const url = 'https://fitness-calculator.p.rapidapi.com/dailycalorie?age=25&gender=male&height=180&weight=70&activitylevel=level_1';
     const options = {
       method: 'GET',
@@ -133,7 +161,7 @@ console.log('Dinner:', dividedCalories.dinner);
 //document ready
 
 
-});
+// });
 
 
 //-------------------------------------------------------------------------
