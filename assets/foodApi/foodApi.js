@@ -41,12 +41,13 @@ try {
     console.log(data.hits[0].recipe)
 
 
-// Example: Extract label, image, and uri
+//  Extract label, image, and uri
 if (data.hits && data.hits.length > 0) {
     const firstRecipe = data.hits[0].recipe;
     label = firstRecipe.label;
     image = firstRecipe.image;
     uri = firstRecipe.uri;
+    url = firstRecipe.url;
 
     console.log("Label:", label);
     console.log("Image:", image);
@@ -73,6 +74,8 @@ $("#search-recipe").on("click", async (e) => {
         $('#card-title').text(label);
         $('#card-text').text(`URI: ${uri}`);
         $('#card-link').attr('href', uri);
+        $('#card-recipe').attr('href', url);
+
     } catch (error) {
         console.error("Error updating card content:", error);
     }
@@ -91,3 +94,4 @@ $("#search-recipe").on("click", async (e) => {
 //------------------------
 
 // ready ??????????
+//hits[0].recipe.cuisineType    copy the property path
