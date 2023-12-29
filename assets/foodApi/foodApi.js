@@ -39,6 +39,19 @@ queryURL.searchParams.append("app_key", apiKey);
             image = recipe.recipe.image;
             uri = recipe.recipe.uri;  
 
+                        
+        });
+        results.innerHTML = recipeDetails;
+    })
+    .catch((error) => {
+        console.error("Error:", error);
+    });
+
+
+// when user click on a recipe card, the card will expand or will link the user to the website where to find the recipe
+//     localStorage.setItem("id", id);
+// }
+})
 //fetch using rapidApi
 
 // const settings = {
