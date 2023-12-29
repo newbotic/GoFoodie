@@ -27,6 +27,17 @@ queryURL.searchParams.append("app_id", appId);
 queryURL.searchParams.append("app_key", apiKey);
  console.log(queryURL);
 
+ fetch(queryURL)
+    .then(function(response){
+        return response.json();
+    }).then (function(data){
+        console.log(data);
+        console.log(data.hits[0].recipe.calories)
+    //! how do Input a kcal range in my fetch API??
+        data.hits.forEach((recipe) => {
+            label = recipe.recipe.label;
+            image = recipe.recipe.image;
+            uri = recipe.recipe.uri;  
 
 //fetch using rapidApi
 
