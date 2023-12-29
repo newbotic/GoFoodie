@@ -38,10 +38,20 @@ queryURL.searchParams.append("app_key", apiKey);
             label = recipe.recipe.label;
             image = recipe.recipe.image;
             uri = recipe.recipe.uri;  
-
-                        
+            var recipeDiv = $("<div>");
+            recipeDiv.addClass("card m-3");
+            var recipeImg = $("<img>");
+            // recipeImg.attr("src="${image}" , "class="card-img-top", alt="image"");
+            var recipeTitle = $("<h5>");
+            recipeTitle.addClass("recTitle");
+            var uriRecipe = $("<button>");
+            uriRecipe.attr("class", "btn btn-warning");
+            uriRecipe.text("Go to Recipe");
+            $(recipeDiv).append(recipeTitle, uriRecipe);
+            $("#results").append(recipeDiv);
+             
         });
-        results.innerHTML = recipeDetails;
+
     })
     .catch((error) => {
         console.error("Error:", error);
