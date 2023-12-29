@@ -20,6 +20,12 @@ let label = "";
 let image = "";
 let uri = "";
 
+// set parameters to build the URL
+const queryURL = new URL(endpoint);
+queryURL.searchParams.append("q", maxKcal);
+queryURL.searchParams.append("app_id", appId);
+queryURL.searchParams.append("app_key", apiKey);
+ console.log(queryURL);
 
 
 //fetch using rapidApi
