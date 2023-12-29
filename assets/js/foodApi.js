@@ -5,20 +5,10 @@ $(document).ready(function() {
 
 
 //fetch using edamam website and an online tutorial
-<<<<<<< HEAD:assets/js/foodApi.js
-const calories = $("#calories").val();//To get the value of the input
-const appId = "a45305f0";
-const apiKey = "143d0f7d6fb84cad8676daa008b291cd" ;
-const endpoint = "https://api.edamam.com/search";
-
-
-var recipeDetails = "";
-var results = $("#results");
-=======
->>>>>>> go/api:assets/foodApi/foodApi.js
 let label = "";
 let image = "";
 let uri = "";
+let url = "";
 
 async function fetchData() {
 const caloriesRequest = $("#recipeReqCal").val();
@@ -34,20 +24,6 @@ const queryURL = new URL(endpoint);
   console.log(queryURL.toString()); 
 
 
-<<<<<<< HEAD:assets/js/foodApi.js
-$(".Submit").on("submit", function (event){
-    event.preventDefault();
-    console.log(queryURL);
-})
-
-fetch(queryURL)
-    .then(function(response){
-        return response.json();
-    }).then (function(data){
-        console.log(data);
-        // console.log(data.hits[0].recipe)
-    })
-=======
 
 console.log(queryURL);//to be deleted
 
@@ -55,8 +31,6 @@ console.log(queryURL);//to be deleted
 
 
 
-// $("#search-recipe").on("click", async (e)=> {   //callback function
-    // e.preventDefault();
 
 
 try {
@@ -64,9 +38,13 @@ try {
     const data = await response.json();
     console.log(data);
     console.log(data.hits[0].recipe)
+// ----------------------
 
+  
+  
 
-//  Extract label, image, and uri
+// ----------------------------
+//  Extract label, image, and uri, url
 if (data.hits && data.hits.length > 0) {
     const firstRecipe = data.hits[0].recipe;
     label = firstRecipe.label;
@@ -118,6 +96,5 @@ $("#search-recipe").on("click", async (e) => {
 
 //------------------------
 
-// ready ??????????
+// ready ??????????hits[0].recipe.digest
 //hits[0].recipe.cuisineType    copy the property path
->>>>>>> go/api:assets/foodApi/foodApi.js

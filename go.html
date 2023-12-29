@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 </head>
 <body>
+  <!-- navbar start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">GoFoodie</a>
@@ -34,8 +42,217 @@
           </div>
         </div>
       </nav>
+      <!-- navbar end -->
       
     <h1>Go</h1>
+
+  <!-- bmr input form start -->
+<div class="container mt-5">
+      <form id="form">
+        <div class="form-check m-1">
+          <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Lose weight
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label " for="flexRadioDefault2">
+            Gain weight
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="text" class="form-control" id="age" name="age" required>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select class="form-control" id="gender" name="gender" required>
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="weight">Weight</label>
+          <input type="text" class="form-control" placeholder="0 .. max80" id="weight" name="weight" required>
+
+        </div>
+
+        <div class="form-group">
+          <label for="height">Height</label>
+          <input type="text" class="form-control" id="height" name="height" required>
+        </div>
+
+        <div class="form-group">
+          <label for="activitylevel">Activity Level</label>
+          <select class="form-control" id="activitylevel" name="activitylevel">
+            <option value="">Select Activity Level</option>
+            <option value="level_1">Sedentary: little or no exercise</option>
+            <option value="level_2">Exercise 1-3 times/week</option>
+            <option value="level_3">Exercise 4-5 times/week</option>
+            <option value="level_4">Daily exercise or intense exercise 3-4 times/week</option>
+            <option value="level_5">Intense exercise 6-7 times/week</option>
+            <option value="level_6">Very intense exercise daily, or physical job</option>
+          </select>
+        </div>
+
+        <button  onclick="save() " type="button" class="btn btn-primary" id="submitBtnBmr">Search</button>
+      </form>
+
+    </div>
+
+    </select>
+
+  </div>
+        <!-- bmr input form end -->
+        <div class="form-group">
+          <label for="weight">Weight</label>
+          <input type="text" class="form-control" placeholder="0 .. max80" id="weight" name="weight" required>
+        </div>
+
+
+    <!-- render bmr, calories start -->
+    <div class="card m-5">
+      <div class="card-body">
+        <div id="renderBmrDiv" class="m-1 "></div>
+        <!-- <div id="caloriesBurnedDiv" class="m-1"></div> -->
+     </div>
+    </div>
+    <!-- render bmr, calories end -->
+
+<!-- input activity  start-->
+<div class="container-fluid input-activity">
+<div class="form-group">
+  <label for="weight">Activity</label>
+  <input type="text" class="form-control" placeholder=" "id="activity" name="activity" required>
+</div>
+<!-- input activity end -->
+<!-- input weight in kg and must be transformed in pounds start-->
+<div class="form-group">
+  <label for="weight">weight in kg</label>
+  <input type="text" class="form-control" placeholder=" "id="weightKg" name="weightKg" required>
+</div>
+<!-- input weight end -->
+<!-- input duration start -->
+<div class="form-group">
+  <label for="weight">Duration in hours</label>
+  <input type="text" class="form-control" placeholder=" "id="durationHour" name="durationMin" required>
+</div>
+
+<!-- input duration end -->
+<button  " type="button" class="btn btn-primary" id="submitActivity">Search</button>
+
+<!-- input weight end -->
+</div>
+<!-- render  the burned calories start-->
+<div class="card m-5">
+  <div class="card-body">
+    <div id="caloriesBurnedDiv" class="m-1"></div>
+ </div>
+</div>
+
+
+<!-- render the burned calories stop -->
+
+
+<!-- test  call save function -->
+<div class="form-group">
+  <label for="weight">Weight</label>
+  <input type="text" class="form-control" placeholder="0 .. max80" id="weightInput" name="weight" required>
+  <button  onclick=" save() ">Search</button>
+
+</div>
+
+<!-- test -->
+
+<!-- modal start -->
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal end -->
+
+
+
+
+
+
+<!-- footer start -->
+
+<footer>
+  <div class="container bg-light">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Foodie</a></li>
+            <li><a href="#">Foodie</a></li>
+            <li><a href="#">Foodie</a></li>
+            <li><a href="#">Foodie</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="#">Foodie</a></li>
+            <li><a href="#">Foodie</a></li>
+            <li><a href="#">Foodie</a></li>
+            <li><a href="#">Foodie</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2>Follow us on</h2>
+          <p class="socials">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-github"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- footer end -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/bmr.js"></script>
+  <script src="./assets/js/foodApi.js"></script>
+  <!-- <script src="./assets/js/logic.js"></script> -->
+  <script src="./assets/js/caloriesBurned.js" ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
