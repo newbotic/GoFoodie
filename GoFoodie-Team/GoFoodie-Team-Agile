@@ -1,0 +1,42 @@
+#GoFoodie Team Guidelines - Agile Approach
+
+1. Iterative Development:
+   -  Emphasize iterative development and delivery.
+   - Break down tasks into smaller user stories or features. Deliver incremental updates to the GoFoodie project regularly, ensuring constant feedback and improvement.
+
+2. User Stories and Backlog:
+   - Create a product backlog with user stories.
+   - Define user stories for GoFoodie features or improvements. Prioritize them in a backlog, allowing the team to focus on high-priority items first.
+
+3. Sprint Planning:
+   - Conduct regular sprint planning meetings.
+   - Plan and commit to a set of tasks or user stories for each sprint. Align with the team's capacity and priorities for the GoFoodie project.
+
+4. Daily Stand-ups:
+   -  Hold daily stand-up meetings for quick updates.
+   -  Maintain daily stand-ups to discuss progress, roadblocks, and plan the day's work for the GoFoodie team.
+
+5. Pull Every Day from GitHub:
+   - Include a daily "Pull Request Review" during stand-ups.
+   - Ensure that every team member pulls the latest changes from the GoFoodie GitHub repository daily. Discuss any potential integration issues or conflicts during the daily stand-up.
+
+6. Cross-Functional Collaboration:
+   -  Promote cross-functional teams.
+   - Encourage collaboration among developers, testers, and other stakeholders in the GoFoodie team to foster a shared understanding of goals and tasks.
+
+7. Communication via WhatsApp and Slack:
+   - Incorporate communication tools into daily practices.
+   - Utilize WhatsApp and Slack for quick communication within the GoFoodie team. Share updates, ask questions, and coordinate efforts seamlessly.
+
+8. Pick Up One Task and Assume Responsibility:
+   - Emphasize ownership of tasks.
+   - Each team member should actively pick up a user story or task from the sprint backlog, assuming responsibility for its completion and delivery. Ownership enhances accountability and commitment.
+
+9. Brief the Team about Completed Tasks:
+   -  Include a brief presentation or demo during sprint reviews.
+   - When a team member completes a task, conduct a brief presentation or demo during the sprint review. Share insights, challenges, and accomplishments with the team.
+
+10. Continuous Integration and Delivery:
+    -  Emphasize continuous integration and delivery.
+    - Automate integration and testing processes in the GoFoodie project to ensure that changes can be easily integrated and delivered regularly.
+
