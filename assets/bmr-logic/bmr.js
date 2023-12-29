@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
 
+    
 
 
 
@@ -42,36 +43,17 @@ try {
       console.log(result);
       const bmr = result.data.BMR;
       const goals = result.data.goals;
-      
 // const dataSaved = JSON.stringify(result.data);
 const dataFromApi = result.data
 
 
 //Test 
-
-console.log(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Mild weight loss"]['calory']}`);
-
-
-
+console.log(result.data.BMR);
+console.log(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
+console.log(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight gain"]['calory']}`);
 
 
-// Callback function to create and append buttons with the calorie value
-
-
-function renderCalories(calorieValue) {
-  const renderContainerDiv = $("#renderCaloriesDiv");
-
-  // Create a button element
-
-
-  const buttonElement = $("<button>").text(`Calorie Value: ${calorieValue}`).click(function() {
-      // Action when the button is clicked (you can customize this)
-     
-      alert(`Button Clicked! Calorie Value: ${calorieValue}`);
-    });
-
-  // Append the button to the result container
-  renderContainerDiv.append(buttonElement);
+// Generate  buttons with the goals
 
 
 
@@ -81,10 +63,13 @@ function renderCalories(calorieValue) {
 
 
 
-const h2Element = $('<h2>').text(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Mild weight loss"]['calory']}`);
 
 
-// localStorage.setItem('dataFromApi',dataSaved);
+// const h2Element = $('<h2>').text(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight loss"]['calory']}`);
+// const h3Element = $('<h2>').text(`Calory value for goal "Mild weight loss": ${dataFromApi['goals']["Weight gain"]['calory']}`);
+
+
+localStorage.setItem('dataFromApi',dataSaved);
       console.log('BMR',bmr);
       // console.log('Goals',goals);
   } catch (error) {
@@ -96,7 +81,24 @@ const h2Element = $('<h2>').text(`Calory value for goal "Mild weight loss": ${da
   // fetchData();
 
 
-
+//   function renderCalories(calorieValue) {
+//     const renderContainerDiv = $("#renderCaloriesDiv");
+  
+//     // Create a button element
+  
+  
+//     const buttonElement = $("<button>")
+//     .text(`Calorie Value: ${calorieValue}`)
+//     .click(function() {
+  
+//         // Event l
+       
+//         alert(`Button Clicked! Calorie Value: ${calorieValue}`);
+//       });
+  
+//     // Append the button to the result container
+//     renderContainerDiv.append(buttonElement);
+  
 
 
 
