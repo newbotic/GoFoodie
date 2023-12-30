@@ -19,13 +19,12 @@ function save() {
   localStorage.setItem('data', JSON.stringify(old_data));
 }
 
-
 //save array end
 
 //save an object start
 let myObj = {
   name:'Adi',
-  age:50
+  age:20
 };
 let myObj_serialized = JSON.stringify(myObj);
 localStorage.setItem('myObj', myObj_serialized);
@@ -35,12 +34,14 @@ console.log(myObj_deserialized);
 
 // save an object end
 
-
+//fetch data from api start
 $(document).ready(function () {
   $("#submitActivity").on("click", async function (e) {
     e.preventDefault();
     const activityVal = $("#activity").val();
     const weightInKg = $("#weightKg").val();
+    
+    //convert kg to pounds
     function transformPound() {
       return weightInKg * 2.2;
     }
@@ -75,8 +76,7 @@ $(document).ready(function () {
   });
 
 
-
-//get data from input 
+//get data from api end
 
 
 
