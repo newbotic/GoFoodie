@@ -11,7 +11,7 @@ $(document).ready(function() {
     
     const ageValue  = $('#age').val();
     const genderValue = $('#gender').val();
-    const weightValue = $('#weight').val();
+    const weightValue = $('#weightInput').val();
     const heightValue = $('#height').val();
     const activitylevelVal = $('#activitylevel').val();
     // console.log(ageValue)
