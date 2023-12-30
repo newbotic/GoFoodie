@@ -2,7 +2,6 @@
 $(document).ready(function() {
 
     
-  // require('dotenv').config();
   
   
     $('#submitBtnBmr').on('click', async function(e){
@@ -47,7 +46,7 @@ $(document).ready(function() {
       
             const dataFromApi = result.data;
       
-            // Display the results or perform further processing
+            // Display the results 
   
             console.log(dataFromApi);
             const headDiv = $('<p>').text(`Calory value for goal "weight loss": ${goals["Weight loss"]['calory']}`);
