@@ -57,43 +57,47 @@
 <div class="container text-center">
   <div class="row">
     <div class="col">
+      
       Column1
   <!-- input activity, weight and duration start -->
   <!-- input activity  start-->
   <div class="container-fluid input-activity">
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="weight">Activity</label>
       <input type="text" class="form-control" placeholder=" " id="activity" name="activity" required>
-    </div>
+    </div> -->
     <!-- input activity end -->
     <!-- input weight in kg and must be transformed in pounds start-->
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="weight">weight in kg</label>
       <input type="text" class="form-control" placeholder=" " id="weightKg" name="weightKg" required>
-    </div>
+    </div> -->
     <!-- input weight end -->
     <!-- input duration start -->
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="weight">Duration in hours</label>
       <input type="text" class="form-control" placeholder=" " id="durationHour" name="durationMin" required>
-    </div>
+    </div> -->
 
     <!-- input duration end -->
-    <button " type=" button" class="btn btn-primary" id="submitActivity">Search</button>
+    <!-- <button type="button" class="btn btn-primary" id="submitActivity">Search</button> -->
 
     <!-- input weight end -->
-  </div>
+
+  </div>     <!-- KEEP THIS CLOSING DIV FOR COLUMN 1 CONTAINER -->
+
   <!-- render  the burned calories start-->
-  <div class="card m-5">
+  <!-- <div class="card m-5">
     <div class="card-body">
       <div id="caloriesBurnedDiv" class="m-1"></div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- render the burned calories stop -->
 
     </div>
+
     <div class="col">
       Column2
         <!-- bmr input form start -->
@@ -114,7 +118,7 @@
 
       <div class="form-group">
         <label for="age">Age</label>
-        <input type="text" class="form-control" id="age" name="age" required>
+        <input type="text" class="form-control" id="age" name="age" required placeholder="Age">
       </div>
 
       <div class="form-group">
@@ -128,13 +132,13 @@
 
       <div class="form-group">
         <label for="weight">Weight</label>
-        <input type="text" class="form-control" placeholder="" id="weightInput" name="weight" required>
+        <input type="text" class="form-control" placeholder="Weight in kg" placeholder="" id="weightInput" name="weight" required>
 
       </div>
 
       <div class="form-group">
         <label for="height">Height</label>
-        <input type="text" class="form-control" id="height" name="height" required>
+        <input type="text" class="form-control" id="height" placeholder="Height in cm" name="height" required>
       </div>
 
       <div class="form-group">
@@ -162,11 +166,11 @@
 
 
   <!-- render bmr, calories start -->
-  <div class="card m-5">
+  <!-- <div class="card m-5">
     <div class="card-body">
       <div id="renderBmrDiv" class="m-1 "></div>
     </div>
-  </div>
+  </div> -->
   <!-- render bmr, calories end -->
 
     </div>
