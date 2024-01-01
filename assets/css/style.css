@@ -16,3 +16,19 @@ ul {
     list-style-type: none;
     padding: 0; 
   }
+
+   #myChart {
+    width: 100px; 
+    height: 00px; 
+}
+
+#recipe-check-form {
+    max-width: 400px; 
+    margin: auto; 
+}
+
+footer{
+    padding: 50px;
+    margin: 50px;
+    background-color: #f8f9fa;
+}
