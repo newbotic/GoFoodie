@@ -2,6 +2,7 @@
 $(document).ready(function() {
 
     
+  // require('dotenv').config();
   
   
     $('#submitBtnBmr').on('click', async function(e){
@@ -46,12 +47,12 @@ $(document).ready(function() {
       
             const dataFromApi = result.data;
       
-            // Display the results 
+            // Display the results or perform further processing
   
             console.log(dataFromApi);
-            const headDiv = $('<p>').text(`Calory value for goal "weight loss": ${goals["Weight loss"]['calory']}`);
-            console.log(`Calory value for goal "Weight loss": ${goals["Weight loss"]['calory']}`);
-            console.log(`Calory value for goal "Weight gain": ${goals["Weight gain"]['calory']}`);
+            const headDiv = $('<p>').text(`Calorie value for goal "weight loss": ${goals["Weight loss"]['calory']}`);
+            console.log(`Calorie value for goal "Weight loss": ${goals["Weight loss"]['calory']}`);
+            console.log(`Calorie value for goal "Weight gain": ${goals["Weight gain"]['calory']}`);
             
             //generate a p and render data
             const displayBmr = $('<p>');
@@ -63,8 +64,8 @@ $(document).ready(function() {
             $('#renderBmrDiv').append(displayLoss);
             $('#renderBmrDiv').append(displayGain);
             displayBmr.text(`Basal Metabolic Rate "BMR": ${bmr}`);
-            displayLoss.text(`Calory value for goal "Weight loss": ${goals["Weight loss"]['calory']}`);
-            displayGain.text(`Calory value for goal "Weight gain": ${goals["Weight gain"]['calory']}`);
+            displayLoss.text(`Calorie value for goal "Weight loss": ${goals["Weight loss"]['calory']}`);
+            displayGain.text(`Calorie value for goal "Weight gain": ${goals["Weight gain"]['calory']}`);
             } else {
     // Handle non-successful response 
     const errorMessage = await response.text();
