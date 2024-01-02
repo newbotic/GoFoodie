@@ -112,3 +112,23 @@ $(document).ready(function() {
     var label = "";
     var image = "";
     var uri = "";
+
+    // event listener to click on search button
+$("#submitBtn").click(function(event){
+    event.preventDefault();
+    console.log("submit!");
+
+const maxKcal = $("#calories").val();
+console.log(maxKcal)
+
+const appId = "a45305f0";
+const apiKey = "143d0f7d6fb84cad8676daa008b291cd" ;
+const endpoint = "https://api.edamam.com/search";
+
+
+// set parameters to build the URL (understand how to look for a kcal range)
+const queryURL = new URL(endpoint);
+queryURL.searchParams.append("q", maxKcal);
+queryURL.searchParams.append("app_id", appId);
+queryURL.searchParams.append("app_key", apiKey);
+ console.log(queryURL.toString());
