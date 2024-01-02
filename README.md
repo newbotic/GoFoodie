@@ -28,6 +28,7 @@ Additionally, GoFoodie provides an extensive collection of recipes aligned with 
 ## Link to Deployed Website
 
 Visit the deployed Website here:
+https://newbotic.github.io/GoFoodie/
 
 ## License
 
