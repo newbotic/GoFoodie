@@ -52,17 +52,16 @@
 
 
   <!-- food search start -->
-  <a href="index.html" style="text-decoration: none;"><h1 class="p-3 bg-warning text-white">Recipe Search</h1></a>
 
-    <div class="container-fluid">
-      <h3 class="p-3 text-warning" id="recipeName"></h3>
-      <img src="" alt="image" id="recipeImage">
-      <div id="healthLabels" class="m-3"></div>
-      <h2>Ingredients</h2>
-      <div id="ingredients" class="m-3"></div>
-      <h2>Instructions</h2>
-      <iframe id="instructions" width="1200" height="500"></iframe>
-    </div>
+  <h1 class="p-3 bg-success text-white">Recipe Search</h1>
+  <h3 class="p-3 text-success">Enter how many kcal you need for your meal</h3>
+  <div class="container-fluid">
+      <input class="form-control form-control-lg" type="text" placeholder="How many kcal you need?" id="calories">
+  </div>
+  <div class="p-3">
+      <button type="button" class="btn btn-success btn-lg"  id="submitBtn" >Submit</button>
+  </div>
+  <div class="container-fluid d-flex row justify-content-evenly" id="results">
   <!-- search food end -->
 
 
