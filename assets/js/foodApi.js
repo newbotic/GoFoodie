@@ -168,3 +168,4 @@ function showRecipe(id) {
     localStorage.setItem("id", id);
     window.location.href = "recipe.html";
 };
+});
