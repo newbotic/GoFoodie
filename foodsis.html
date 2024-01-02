@@ -47,16 +47,19 @@
         </div>
       </nav>
       
-    <h1>Food Analysis </h1>
-    Full analysis of food recipes in real time.
+   <div id="foodsis-title" >
 
+     <h6>Food Analysis </h6>
+   <p>Full analysis of food recipes in real time.</p>
 
-
+   </div>
+   
 
 <!-- input analysis start -->
-<div class="container mt-3">
+<div  id="foodsis-container" class="container  mt-3">
+  <div id="background-image"></div>
   <div class="row">
-      <form id="recipe-check-form" >
+      <form id="recipe-check-form"  class="col-lg-6" >
           <div class="mb-3">
               <label for="title" class="form-label" >Title</label>
               <input type="text" class="form-control" id="title" name="title" />
@@ -65,10 +68,10 @@
               <label for="recipe" class="form-label" >Recipe</label>
           <textarea name="form-control" id="recipe" placeholder="enter full recipe or individual ingredient e.g.
           1 apple
-          1 egg " name="recipe" cols="60" rows="3"></textarea>
+          1 egg " name="recipe" cols="30" rows="4"></textarea>
           </div>
           <button class="btn btn-primary" >Submit recipe</button>
-          <button  class="btn btn-primary">Clear form</button>
+          <button  class="btn btn-primary">Clear recipe</button>
       </form>
   </div>
   <!-- <div class="row mt-3" id="output" ></div> -->
