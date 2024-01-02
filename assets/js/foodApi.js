@@ -42,8 +42,8 @@
 //     console.log(data.hits[0].recipe)
 // // ----------------------
 
-  
-  
+
+
 
 // // ----------------------------
 // //  Extract label, image, and uri, url
@@ -69,7 +69,7 @@
 // $("#search-recipe").on("click", async (e) => {
 //     e.preventDefault();
 
-    
+
 //     try {
 //         // Wait for fetchData to complete
 //         await fetchData();
@@ -89,24 +89,24 @@
 // });
 
 
-    
-    
-    
-    
-    
+
+
+
+
+
 // });
 
 // //------------------------
 
 // // ready ??????????hits[0].recipe.digest
 // //hits[0].recipe.cuisineType    copy the property path
-$(document).ready(function() {
+$(document).ready(function () {
 
     //set variables
     localStorage.setItem("app_id", "1f05a08d");
     localStorage.setItem("app_key", "a614fb15c7618687c8cd2382d7a980a9");
     localStorage.setItem("endpoint", "https://api.edamam.com/search");
-    
+
     var recipeDiv = "";
     var results = $("#results");
     var label = "";
@@ -114,58 +114,66 @@ $(document).ready(function() {
     var uri = "";
 
     // event listener to click on search button
-$("#submitBtn").click(function(event){
-    event.preventDefault();
-    console.log("submit!");
+    $("#submitBtn").click(function (event) {
+        event.preventDefault();
+        console.log("submit!");
 
-const maxKcal = $("#calories").val();
-console.log(maxKcal)
+        const maxKcal = $("#calories").val();
+        console.log(maxKcal)
 
-const appId = "a45305f0";
-const apiKey = "143d0f7d6fb84cad8676daa008b291cd" ;
-const endpoint = "https://api.edamam.com/search";
+        const appId = "a45305f0";
+        const apiKey = "143d0f7d6fb84cad8676daa008b291cd";
+        const endpoint = "https://api.edamam.com/search";
 
 
-// set parameters to build the URL (understand how to look for a kcal range)
-const queryURL = new URL(endpoint);
-queryURL.searchParams.append("q", maxKcal);
-queryURL.searchParams.append("app_id", appId);
-queryURL.searchParams.append("app_key", apiKey);
- console.log(queryURL.toString());
+        // set parameters to build the URL (understand how to look for a kcal range)
+        const queryURL = new URL(endpoint);
+        queryURL.searchParams.append("q", maxKcal);
+        queryURL.searchParams.append("app_id", appId);
+        queryURL.searchParams.append("app_key", apiKey);
+        console.log(queryURL.toString());
 
- //fetch from edamam API
-fetch(queryURL)
-.then(function(response){
-    return response.json();
-}).then (function(data){
-    console.log(data);
-    console.log(data.hits[0].recipe.calories)
-// dynamicall create html element for each recipe result
-    data.hits.forEach((recipe) => {
-        label = recipe.recipe.label;
-        image = recipe.recipe.image;
-        uri = recipe.recipe.uri;
-        kcal = Math.round(recipe.recipe.calories); 
-        recipeDiv += `<div class="card m-3" style="width: 18rem;">
-        <img src="${image}" class="card-img-top" alt="image">
-        <div class="card-body">
-          <h5 class="card-title">${label}</h5>
-          <div class="mb-5 d-flex justify-content-around">
-                <h3>${kcal}</h3>
-          <button id='goToRecipe' class="btn btn-primary" onclick="showRecipe('${uri}')">View Recipe</button>
-        </div>
-        </div>`;  
-        });
+        //fetch from edamam API
+        fetch(queryURL)
+            .then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                console.log(data);
+                console.log(data.hits[0].recipe.calories)
+                // dynamicall create html element for each recipe result
+                data.hits.forEach((recipe) => {
 
-        results.append(recipeDiv); 
-    })
-.catch((error) => {
-    console.error("Error:", error);
-});
-});
+                    label = recipe.recipe.label;
+                    image = recipe.recipe.image;
+                    uri = recipe.recipe.uri;
+                    kcal = Math.round(recipe.recipe.calories);
+                    function createDiv(label, image, uri, kcal) {
+                        return `<div class="card m-3" style="width: 18rem;">
+       <img src="${image}" class="card-img-top" alt="image">
+       <div class="card-body">
+         <h5 class="card-title">${label}</h5>
+         <div class="mb-5 d-flex justify-content-around">
+               <h3>${kcal}</h3>
+         <button id='goToRecipe' class="btn btn-primary" onclick="showRecipe(${uri})">View Recipe</button>
+         <script>
+           function showRecipe(id) {
+               // localStorage.setItem("id", id);
+               // window.location.href = "recipe.html";
+               console.log(id)
+           };
+         </script>
+       </div>
+       </div>`
+                    }
 
-function showRecipe(id) {
-    localStorage.setItem("id", id);
-    window.location.href = "recipe.html";
-};
-});
+                    recipeDiv += createDiv(label, image, uri, kcal);
+
+                    results.append(recipeDiv);
+                })
+                    .catch((error) => {
+                        console.error("Error:", error);
+                    });
+            });
+
+
+        })})
