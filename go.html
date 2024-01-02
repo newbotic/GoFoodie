@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
 </head>
 
@@ -34,15 +34,15 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="go.html">Go</a>
-            <li class="nav-item">
-              <a class="nav-link" href="foodsis.html">Foodsis</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="foodsis.html">Foodsis</a>
+          </li>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="Membership.html">Membership</a>
           </li>
         </ul>
       </div>
@@ -51,166 +51,168 @@
   <!-- navbar end -->
 
   <h1>Go</h1>
-<!-- container start -->
-<div class="container-fluid">
-<!-- grid start -->
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      
-      Column1
-  <!-- input activity, weight and duration start -->
-  <!-- input activity  start-->
-  <div class="container-fluid input-activity">
-    <!-- <div class="form-group">
+  <!-- container start -->
+  <div class="container-fluid">
+    <!-- grid start -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+
+          Column1
+          <!-- input activity, weight and duration start -->
+          <!-- input activity  start-->
+          <div class="container-fluid input-activity">
+            <!-- <div class="form-group">
       <label for="weight">Activity</label>
       <input type="text" class="form-control" placeholder=" " id="activity" name="activity" required>
     </div> -->
-    <!-- input activity end -->
-    <!-- input weight in kg and must be transformed in pounds start-->
-    <!-- <div class="form-group">
+            <!-- input activity end -->
+            <!-- input weight in kg and must be transformed in pounds start-->
+            <!-- <div class="form-group">
       <label for="weight">weight in kg</label>
       <input type="text" class="form-control" placeholder=" " id="weightKg" name="weightKg" required>
     </div> -->
-    <!-- input weight end -->
-    <!-- input duration start -->
-    <!-- <div class="form-group">
+            <!-- input weight end -->
+            <!-- input duration start -->
+            <!-- <div class="form-group">
       <label for="weight">Duration in hours</label>
       <input type="text" class="form-control" placeholder=" " id="durationHour" name="durationMin" required>
     </div> -->
 
-    <!-- input duration end -->
-    <!-- <button type="button" class="btn btn-primary" id="submitActivity">Search</button> -->
+            <!-- input duration end -->
+            <!-- <button type="button" class="btn btn-primary" id="submitActivity">Search</button> -->
 
-    <!-- input weight end -->
+            <!-- input weight end -->
 
-  </div>     <!-- KEEP THIS CLOSING DIV FOR COLUMN 1 CONTAINER -->
+          </div> <!-- KEEP THIS CLOSING DIV FOR COLUMN 1 CONTAINER -->
 
-  <!-- render  the burned calories start-->
-  <!-- <div class="card m-5">
+          <!-- render  the burned calories start-->
+          <!-- <div class="card m-5">
     <div class="card-body">
       <div id="caloriesBurnedDiv" class="m-1"></div>
     </div>
   </div> -->
 
 
-  <!-- render the burned calories stop -->
+          <!-- render the burned calories stop -->
 
-    </div>
+        </div>
 
-    <div class="col">
-      Column2
-        <!-- bmr input form start testmsg -->
-  <div class="container mt-5">
-    <form id="form">
-      <div class="form-check m-1">
-        <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioLose">
-        <label class="form-check-label" for="flexRadioLose">
-          Lose weight
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioGain" checked>
-        <label class="form-check-label " for="flexRadioGain">
-          Gain weight
-        </label>
-      </div>
-
-      <div class="form-group">
-        <label for="age">Age</label>
-        <input type="text" class="form-control" id="age" name="age" required placeholder="Age">
-      </div>
-
-      <div class="form-group">
-        <label for="gender">Gender</label>
-        <select class="form-control" id="gender" name="gender" required>
-          <option value="">Select gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="weight">Weight</label>
-        <input type="text" class="form-control" placeholder="Weight in kg" placeholder="" id="weightInput" name="weight" required>
-
-      </div>
-
-      <div class="form-group">
-        <label for="height">Height</label>
-        <input type="text" class="form-control" id="height" placeholder="Height in cm" name="height" required>
-      </div>
-
-      <div class="form-group">
-        <label for="activitylevel">Activity Level</label>
-        <select class="form-control" id="activitylevel" name="activitylevel">
-          <option value="">Select Activity Level</option>
-          <option value="level_1">Sedentary: little or no exercise</option>
-          <option value="level_2">Exercise 1-3 times/week</option>
-          <option value="level_3">Exercise 4-5 times/week</option>
-          <option value="level_4">Daily exercise or intense exercise 3-4 times/week</option>
-          <option value="level_5">Intense exercise 6-7 times/week</option>
-          <option value="level_6">Very intense exercise daily, or physical job</option>
-        </select>
-      </div>
-
-      <button onclick="save()" type="button" class="btn btn-primary" id="submitBtnBmr">Search</button>
-    </form>
-
-  </div>
-
-  </select>
-
-  </div>
-  <!-- bmr input form end -->
-
-
-  <!-- render bmr, calories start -->
-  <div id="bmrCard" class="card card-stats mb-4 mb-xl-0">
-    <div class="card-body">
-      <div class="m-1 "></div>
-      <div class="row">
         <div class="col">
-          <h5 class="card-title text-uppercase text-muted mb-0">Your Calorie Goal</h5>
-          <div class="m-1 "></div>
-        </div>
-        <div class="col-auto">
-          <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
-            <i class="fas fa-chart-bar"></i>
+          Column2
+          <!-- bmr input form start testmsg -->
+          <div class="container mt-5">
+            <form id="form">
+              <div class="form-check m-1">
+                <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioLose">
+                <label class="form-check-label" for="flexRadioLose">
+                  Lose weight
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioGain" checked>
+                <label class="form-check-label " for="flexRadioGain">
+                  Gain weight
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" class="form-control" id="age" name="age" required placeholder="Age">
+              </div>
+
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender" required>
+                  <option value="">Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="text" class="form-control" placeholder="Weight in kg" placeholder="" id="weightInput"
+                  name="weight" required>
+
+              </div>
+
+              <div class="form-group">
+                <label for="height">Height</label>
+                <input type="text" class="form-control" id="height" placeholder="Height in cm" name="height" required>
+              </div>
+
+              <div class="form-group">
+                <label for="activitylevel">Activity Level</label>
+                <select class="form-control" id="activitylevel" name="activitylevel">
+                  <option value="">Select Activity Level</option>
+                  <option value="level_1">Sedentary: little or no exercise</option>
+                  <option value="level_2">Exercise 1-3 times/week</option>
+                  <option value="level_3">Exercise 4-5 times/week</option>
+                  <option value="level_4">Daily exercise or intense exercise 3-4 times/week</option>
+                  <option value="level_5">Intense exercise 6-7 times/week</option>
+                  <option value="level_6">Very intense exercise daily, or physical job</option>
+                </select>
+              </div>
+
+              <button onclick="save()" type="button" class="btn btn-primary" id="submitBtnBmr">Search</button>
+            </form>
+
           </div>
+
+          </select>
+
         </div>
-      </div>
-      <p class="mt-3 mb-0 text-muted text-sm">
-        <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
-        <span> Now that you have your calorie goal, click the button below to see recipes!</span>
-      </p>
-      <div id="renderBmrDiv"></div> 
-      <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#">Let's see recipes!</a>  <!--This link to the recipe page -->
-    </div>
+        <!-- bmr input form end -->
 
-  </div>
 
-  <!-- <div class="card m-5">
+        <!-- render bmr, calories start -->
+        <div id="bmrCard" class="card card-stats mb-4 mb-xl-0">
+          <div class="card-body">
+            <div class="m-1 "></div>
+            <div class="row">
+              <div class="col">
+                <h5 class="card-title text-uppercase text-muted mb-0">Your Calorie Goal</h5>
+                <div class="m-1 "></div>
+              </div>
+              <div class="col-auto">
+                <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                  <i class="fas fa-chart-bar"></i>
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 mb-0 text-muted text-sm">
+              <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
+              <span> Now that you have your calorie goal, click the button below to see recipes!</span>
+            </p>
+            <div id="renderBmrDiv"></div>
+            <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#">Let's see recipes!</a>
+            <!--This link to the recipe page -->
+          </div>
+
+        </div>
+
+        <!-- <div class="card m-5">
     <div class="card-body">
       <div id="renderBmrDiv" class="m-1 "></div>
     </div>
   </div> -->
-  <!-- render bmr, calories end -->
+        <!-- render bmr, calories end -->
+
+      </div>
 
     </div>
-  
-</div>
-<!-- grid end -->
+    <!-- grid end -->
 
-</div>
-<!-- container end -->
+  </div>
+  <!-- container end -->
 
-<!-- container chart start -->
-<div class="container-fluid">
-  ...
-</div>
+  <!-- container chart start -->
+  <div class="container-fluid">
+    ...
+  </div>
 
-<!-- container chart end -->
+  <!-- container chart end -->
 
 
 
@@ -229,7 +231,7 @@
               <li><a href="go.html">Go</a></li>
               <li><a href="foodsis.html">Foodsis</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Membership.html">Membership</a></li>
             </ul>
           </div>
         </div>
@@ -262,43 +264,43 @@
       </div>
     </div>
   </footer>
-  
+
   <!-- footer end -->
 
-<!-- Bootstrap Pop-out Modal for error -->
-<div class="modal" id="errorModal">
-  <div class="modal-dialog">
+  <!-- Bootstrap Pop-out Modal for error -->
+  <div class="modal" id="errorModal">
+    <div class="modal-dialog">
       <div class="modal-content">
-          <div class="modal-header">
-              <h2 class="modal-title">Head's up!</h2>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p>Be sure to enter your weight in kg and your height in cm! 😅 </p>
-           
-            </div> <!-- end of .modal-body -->
+        <div class="modal-header">
+          <h2 class="modal-title">Head's up!</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Be sure to enter your weight in kg and your height in cm! 😅 </p>
+
+        </div> <!-- end of .modal-body -->
       </div> <!-- end of .modal-content -->
-  </div> <!-- end of .modal-dialog -->
-</div> <!-- end of .calorieModal -->
+    </div> <!-- end of .modal-dialog -->
+  </div> <!-- end of .calorieModal -->
 
 
- <!-- Bootstrap Pop-out Modal for stats -->
- <div class="modal" id="calorieModal">
-  <div class="modal-dialog">
+  <!-- Bootstrap Pop-out Modal for stats -->
+  <div class="modal" id="calorieModal">
+    <div class="modal-dialog">
       <div class="modal-content">
-          <div class="modal-header">
-              <h2 class="modal-title">Your Calorie Goal</h2>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p>This is the calorie count you should be aiming for:</p>
-            <!-- Example calories number -->
-            <h3 id="calorieValue"></h3>  
-            <button type="button" class="btn btn-primary btn-lg btn-block">See Recipes!</button>
-          </div> <!-- end of .modal-body -->
+        <div class="modal-header">
+          <h2 class="modal-title">Your Calorie Goal</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>This is the calorie count you should be aiming for:</p>
+          <!-- Example calories number -->
+          <h3 id="calorieValue"></h3>
+          <button type="button" class="btn btn-primary btn-lg btn-block">See Recipes!</button>
+        </div> <!-- end of .modal-body -->
       </div> <!-- end of .modal-content -->
-  </div> <!-- end of .modal-dialog -->
-</div> <!-- end of .calorieModal -->
+    </div> <!-- end of .modal-dialog -->
+  </div> <!-- end of .calorieModal -->
 
 
 

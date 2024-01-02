@@ -1,95 +1,91 @@
 .input-group {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .hero-container-style {
-    margin-bottom: 9rem;
+  margin-bottom: 9rem;
 }
 
 #scroll {
-    background-color: rgb(235, 235, 235);
+  background-color: rgb(235, 235, 235);
 }
 
 #renderBmrDiv {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 #bmrCard {
   display: none;
 }
 
-
-
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
-
 
 /* style foodis start */
 
 #myChart {
-    width: 100px;
-    height: 00px;
+  width: 100px;
+  height: 00px;
 }
 
 #recipe-check-form {
-    max-width: 400px;
-    margin: auto;
+  max-width: 400px;
+  margin: auto;
 }
 
 footer {
-    padding: 50px;
-    margin: 50px;
-    background-color: #f8f9fa;
+  padding: 50px;
+  margin: 50px;
+  background-color: #f8f9fa;
 }
-
 
 #foodsis-container {
-    position: relative;
-    color:black;
-    padding: 20px;
+  position: relative;
+  color: black;
+  padding: 20px;
 }
 
-    #background-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../images/pexels-ella-olsson-1640772.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1;
-        opacity:0.8 ;
-    }
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pexels-ella-olsson-1640772.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.8;
+}
 
+#recipe-check-form {
+  position: relative;
+  z-index: 1;
+}
 
-    #recipe-check-form {
-        position: relative;
-        z-index: 1;
-    }
+#foodsis-title {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+@media (max-width: 767px) {
+  #foodsis-container {
+    padding: 10px;
+  }
+}
 
-    #foodsis-title {
-        display: flex;
-        justify-content: space-evenly;
+.h6-foodsis {
+  text-align: center;
+  padding-top: 2%;
+  font-size: larger;
+}
 
-    }
+.p-foodsis {
+  padding-top: 1%;
+}
 
-    @media (max-width: 767px) {
-        #foodsis-container {
-            padding: 10px;
-        }
-    }
-
-    #foodsis-title > h6,
-    #foodsis-title > p {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-
-    /* style foodis end */
+/* style foodis end */
