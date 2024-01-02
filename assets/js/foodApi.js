@@ -156,3 +156,15 @@ fetch(queryURL)
         </div>
         </div>`;  
         });
+
+        results.append(recipeDiv); 
+    })
+.catch((error) => {
+    console.error("Error:", error);
+});
+});
+
+function showRecipe(id) {
+    localStorage.setItem("id", id);
+    window.location.href = "recipe.html";
+};
