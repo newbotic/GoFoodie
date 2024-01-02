@@ -104,14 +104,14 @@
   <div class="container mt-5">
     <form id="form">
       <div class="form-check m-1">
-        <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
+        <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioLose">
+        <label class="form-check-label" for="flexRadioLose">
           Lose weight
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label " for="flexRadioDefault2">
+        <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioGain" checked>
+        <label class="form-check-label " for="flexRadioGain">
           Gain weight
         </label>
       </div>
@@ -166,11 +166,35 @@
 
 
   <!-- render bmr, calories start -->
-  <div class="card m-5">
+  <div id="bmrCard" class="card card-stats mb-4 mb-xl-0">
+    <div class="card-body">
+      <div class="m-1 "></div>
+      <div class="row">
+        <div class="col">
+          <h5 class="card-title text-uppercase text-muted mb-0">Your Calorie Goal</h5>
+          <div class="m-1 "></div>
+        </div>
+        <div class="col-auto">
+          <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3 mb-0 text-muted text-sm">
+        <!-- <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span> -->
+        <span> Now that you have your calorie goal, click the button below to see recipes!</span>
+      </p>
+      <div id="renderBmrDiv"></div> 
+      <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#">Let's see recipes!</a>  <!--This link to the recipe page -->
+    </div>
+
+  </div>
+
+  <!-- <div class="card m-5">
     <div class="card-body">
       <div id="renderBmrDiv" class="m-1 "></div>
     </div>
-  </div>
+  </div> -->
   <!-- render bmr, calories end -->
 
     </div>
@@ -239,10 +263,42 @@
     </div>
   </footer>
   
-
   <!-- footer end -->
 
+<!-- Bootstrap Pop-out Modal for error -->
+<div class="modal" id="errorModal">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h2 class="modal-title">Head's up!</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Be sure to enter your weight in kg and your height in cm! 😅 </p>
+           
+            </div> <!-- end of .modal-body -->
+      </div> <!-- end of .modal-content -->
+  </div> <!-- end of .modal-dialog -->
+</div> <!-- end of .calorieModal -->
 
+
+ <!-- Bootstrap Pop-out Modal for stats -->
+ <div class="modal" id="calorieModal">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h2 class="modal-title">Your Calorie Goal</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>This is the calorie count you should be aiming for:</p>
+            <!-- Example calories number -->
+            <h3 id="calorieValue"></h3>  
+            <button type="button" class="btn btn-primary btn-lg btn-block">See Recipes!</button>
+          </div> <!-- end of .modal-body -->
+      </div> <!-- end of .modal-content -->
+  </div> <!-- end of .modal-dialog -->
+</div> <!-- end of .calorieModal -->
 
 
 

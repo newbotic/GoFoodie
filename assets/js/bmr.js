@@ -50,6 +50,7 @@ $(document).ready(function() {
             // Display the results or perform further processing
   
             console.log(dataFromApi);
+            $("#bmrCard").css("display","block")
             const headDiv = $('<p>').text(`Calorie value for goal "weight loss": ${goals["Weight loss"]['calory']}`);
             console.log(`Calorie value for goal "Weight loss": ${goals["Weight loss"]['calory']}`);
             console.log(`Calorie value for goal "Weight gain": ${goals["Weight gain"]['calory']}`);
@@ -58,15 +59,26 @@ $(document).ready(function() {
             const displayBmr = $('<p>');
             const displayLoss = $('<p>');
             const displayGain = $('<p>');
-  
-  
+
+              //Clear form
+            $('#form')[0].reset()
+            $('#renderBmrDiv').empty()
             $('#renderBmrDiv').append(displayBmr);
             $('#renderBmrDiv').append(displayLoss);
             $('#renderBmrDiv').append(displayGain);
             displayBmr.text(`Basal Metabolic Rate "BMR": ${bmr}`);
             displayLoss.text(`Calorie value for goal "Weight loss": ${goals["Weight loss"]['calory']}`);
             displayGain.text(`Calorie value for goal "Weight gain": ${goals["Weight gain"]['calory']}`);
-            } else {
+            $('#calorieModal').modal('show');  
+            if ($("#flexRadioLose").is(":checked")) {
+            $("#calorieValue").text(`${goals["Weight loss"]['calory']} cal`)
+            }
+            else {
+              $("#calorieValue").text(`${goals["Weight gain"]['calory']} cal`)
+
+            }
+
+          } else {
     // Handle non-successful response 
     const errorMessage = await response.text();
     console.error(`Error: ${errorMessage}`);
@@ -74,6 +86,7 @@ $(document).ready(function() {
   
         } catch (error) {
           console.error(error);
+          $('#errorModal').modal('show');
         }
       }
       

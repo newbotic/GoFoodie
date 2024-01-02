@@ -11,6 +11,15 @@
     background-color: rgb(235, 235, 235);
 }
 
+#renderBmrDiv {
+    background-color: yellow;
+}
+
+#bmrCard {
+  display: none;
+}
+
+
 
 ul {
     list-style-type: none;
@@ -41,7 +50,7 @@ footer {
     position: relative;
     color:black;
     padding: 20px;
-
+}
 
     #background-image {
         position: absolute;
