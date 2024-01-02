@@ -52,11 +52,17 @@
 
 
   <!-- food search start -->
-  <div class="input-group m-5 p-5">
-    <input id="recipeReqCal" type="search" class="form-control rounded" placeholder="Search recipe" aria-label="Search"
-      aria-describedby="search-addon" />
-    <button id="search-recipe" type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
-  </div>
+  <a href="index.html" style="text-decoration: none;"><h1 class="p-3 bg-warning text-white">Recipe Search</h1></a>
+
+    <div class="container-fluid">
+      <h3 class="p-3 text-warning" id="recipeName"></h3>
+      <img src="" alt="image" id="recipeImage">
+      <div id="healthLabels" class="m-3"></div>
+      <h2>Ingredients</h2>
+      <div id="ingredients" class="m-3"></div>
+      <h2>Instructions</h2>
+      <iframe id="instructions" width="1200" height="500"></iframe>
+    </div>
   <!-- search food end -->
 
 
