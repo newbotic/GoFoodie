@@ -21,6 +21,14 @@ The platform offers personalized calorie targets for users aiming to lose, gain,
 
 Additionally, GoFoodie provides an extensive collection of recipes aligned with the user's calorie goals, allowing them to explore and prepare meals that fit their dietary needs.
 
+## Vision:
+
+"To redefine health and wellness through personalized nutrition guidance, GoFoodie envisions a world where individuals seamlessly achieve their fitness goals with a deeper understanding of their dietary needs. We aspire to empower users to make informed choices by providing a platform that not only tracks calorie intake but also inspires a lifestyle centered around nourishing, enjoyable meals."
+
+## Mission:
+
+"At GoFoodie, our mission is to revolutionize the way individuals approach nutrition and health. We aim to deliver a user-centric platform that offers tailored calorie tracking solutions, guiding users on their unique fitness journeys. Through a curated collection of recipes aligned with users' calorie objectives, we strive to simplify meal planning and foster a culture of balanced, mindful eating. By promoting accessibility and empowerment, we seek to make healthy living an intuitive and rewarding experience for all."
+
 ## Screenshot
 
 [screenshot/images of the website will go here]
