@@ -132,3 +132,27 @@ queryURL.searchParams.append("q", maxKcal);
 queryURL.searchParams.append("app_id", appId);
 queryURL.searchParams.append("app_key", apiKey);
  console.log(queryURL.toString());
+
+ //fetch from edamam API
+fetch(queryURL)
+.then(function(response){
+    return response.json();
+}).then (function(data){
+    console.log(data);
+    console.log(data.hits[0].recipe.calories)
+// dynamicall create html element for each recipe result
+    data.hits.forEach((recipe) => {
+        label = recipe.recipe.label;
+        image = recipe.recipe.image;
+        uri = recipe.recipe.uri;
+        kcal = Math.round(recipe.recipe.calories); 
+        recipeDiv += `<div class="card m-3" style="width: 18rem;">
+        <img src="${image}" class="card-img-top" alt="image">
+        <div class="card-body">
+          <h5 class="card-title">${label}</h5>
+          <div class="mb-5 d-flex justify-content-around">
+                <h3>${kcal}</h3>
+          <button id='goToRecipe' class="btn btn-primary" onclick="showRecipe('${uri}')">View Recipe</button>
+        </div>
+        </div>`;  
+        });
