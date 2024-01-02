@@ -1,5 +1,10 @@
+var recipeId =JSON.parse(localStorage.getItem("id"));
+console.log(recipeId);
+
+
+
 // Create the URL with query parameters
-const url = new URL(endpoint);
+const url = new URL(recipeId);
 url.searchParams.append("r", uri);
 url.searchParams.append("app_id", app_id);
 url.searchParams.append("app_key", app_key);

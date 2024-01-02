@@ -142,7 +142,7 @@ $(document).ready(function () {
                 console.log(data.hits[0].recipe.calories)
                 // dynamicall create html element for each recipe result
                 data.hits.forEach((recipe) => {
-
+                    ingredients = recipe.recipe.ingredientLines
                     label = recipe.recipe.label;
                     image = recipe.recipe.image;
                     uri = recipe.recipe.uri;
@@ -154,11 +154,12 @@ $(document).ready(function () {
          <h5 class="card-title">${label}</h5>
          <div class="mb-5 d-flex justify-content-around">
                <h3>${kcal}</h3>
-         <button id='goToRecipe' class="btn btn-primary" onclick="showRecipe(${uri})">View Recipe</button>
+               
+         <button id='goToRecipe' class="btn btn-primary" onclick="showRecipe('${uri}')">View Recipe</button>
          <script>
            function showRecipe(id) {
-               // localStorage.setItem("id", id);
-               // window.location.href = "recipe.html";
+               localStorage.setItem("id", JSON.stringify(id));
+               window.location.href = "recipe.html";
                console.log(id)
            };
          </script>
@@ -177,3 +178,7 @@ $(document).ready(function () {
 
 
         })})
+
+
+        //set in local storage the object
+        //parse the img, url
