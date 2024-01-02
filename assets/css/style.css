@@ -37,15 +37,9 @@ ul {
 }
 
 footer {
-<<<<<<< HEAD
-  padding: 50px;
-  margin: 50px;
   background-color: #f8f9fa;
-=======
     padding: 50px;
     margin: 50px;
-    /* background-color: #5fa3e8; */
->>>>>>> cd7ad965e63b0679f43f05c9133c2d6ea863f130
 }
 
 #foodsis-container {
@@ -94,9 +88,7 @@ footer {
   padding-top: 1%;
 }
 
-<<<<<<< HEAD
-/* style foodis end */
-=======
+
     @media (max-width: 767px) {
         #foodsis-container {
             padding: 10px;

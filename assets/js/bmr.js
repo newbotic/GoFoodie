@@ -94,3 +94,7 @@ $(document).ready(function() {
   
   
     //goals["Extreme weight gain"].calory
+
+    // save data to local storage
+
+    
