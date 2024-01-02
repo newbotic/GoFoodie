@@ -52,11 +52,16 @@
 
 
   <!-- food search start -->
-  <div class="input-group m-5 p-5">
-    <input id="recipeReqCal" type="search" class="form-control rounded" placeholder="Search recipe" aria-label="Search"
-      aria-describedby="search-addon" />
-    <button id="search-recipe" type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
+
+  <h1 class="p-3 bg-success text-white">Recipe Search</h1>
+  <h3 class="p-3 text-success">Enter how many kcal you need for your meal</h3>
+  <div class="container-fluid">
+      <input class="form-control form-control-lg" type="text" placeholder="How many kcal you need?" id="calories">
   </div>
+  <div class="p-3">
+      <button type="button" class="btn btn-success btn-lg"  id="submitBtn" >Submit</button>
+  </div>
+  <div class="container-fluid d-flex row justify-content-evenly" id="results">
   <!-- search food end -->
 
 
