@@ -154,7 +154,7 @@ $(document).ready(function () {
          <h5 class="card-title">${label}</h5>
          <div class="mb-5 d-flex justify-content-around">
                <h3>${kcal}</h3>
-               
+
          <button id='goToRecipe' class="btn btn-primary" onclick="showRecipe('${uri}')">View Recipe</button>
          <script>
            function showRecipe(id) {
@@ -177,7 +177,7 @@ $(document).ready(function () {
             });
 
 
-        })})
+        })});
 
 
         //set in local storage the object
