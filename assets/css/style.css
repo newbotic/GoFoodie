@@ -82,10 +82,12 @@ footer {
   text-align: center;
   padding-top: 2%;
   font-size: larger;
+  font-family: "Montserrat", sans-serif;
 }
 
 .p-foodsis {
   padding-top: 1%;
+  font-family: "Lato", sans-serif;
 }
 
 /* style foodis end */
@@ -167,4 +169,34 @@ footer {
 #goToRecipeBtn:hover {
   background-color: #563d7c;
   border-color: #563d7c;
+}
+
+.btn.btn-primary.btn-lg.btn-block {
+  background-color: #6f42c1;
+  color: #ffffff;
+  outline: none;
+}
+
+.btn.btn-primary.btn-lg.btn-block:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.btn.btn-primary.btn-xl.rounded-pill.mt-5 {
+  background-color: #6f42c1;
+  color: #ffffff;
+}
+
+h1,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2,
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.form-check-label,
+.form-group {
+  font-family: "Lato", sans-serif;
 }

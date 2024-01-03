@@ -188,18 +188,30 @@ $(document).ready(function() {
           const displayLoss = $('<p>');
           const displayGain = $('<p>');
 
-          $('#form')[0].reset();
-          $('#renderBmrDiv').empty();
-          $('#renderBmrDiv').append(displayBmr);
-          $('#renderBmrDiv').append(displayLoss);
-          $('#renderBmrDiv').append(displayGain);
-          displayBmr.text(`Basal Metabolic Rate "BMR": ${bmr}`);
-          displayLoss.text(`Calorie value for goal "Weight loss": ${goals["Weight loss"]['calory']}`);
-          displayGain.text(`Calorie value for goal "Weight gain": ${goals["Weight gain"]['calory']}`);
-          $('#calorieModal').modal('show');
+              //Clear form
+            $('#form')[0].reset()
+            $('#renderBmrDiv').empty()
+            $('#renderBmrDiv').append(displayBmr);
+            $('#renderBmrDiv').append(displayLoss);
+            $('#renderBmrDiv').append(displayGain);
+            displayBmr.text(`Basal Metabolic Rate "BMR": ${bmr}`);
+            if ($("#flexRadioLose").is(":checked")) {
+              displayLoss.text(`Calorie value for goal "Weight loss": ${goals["Weight loss"]['calory']}`);
+              }
+              else {
+                displayGain.text(`Calorie value for goal "Weight gain": ${goals["Weight gain"]['calory']}`);
+   
+              }
+            displayGain.text(`Calorie value for goal "Weight gain": ${goals["Weight gain"]['calory']}`);
+            $('#calorieModal').modal('show');  
+            if ($("#flexRadioLose").is(":checked")) {
+            $("#calorieValue").text(`${goals["Weight loss"]['calory']} cal`)
+            }
+            else {
+              $("#calorieValue").text(`${goals["Weight gain"]['calory']} cal`)
 
-          if ($("#flexRadioLose").is(":checked")) {
-            $("#calorieValue").text(`${goals["Weight loss"]['calory']} cal`);
+            }
+
           } else {
             $("#calorieValue").text(`${goals["Weight gain"]['calory']} cal`);
           }
