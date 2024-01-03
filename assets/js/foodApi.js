@@ -151,10 +151,10 @@ $(document).ready(function () {
                         return `<div class="card m-3" style="width: 18rem;">
        <img src="${image}" class="card-img-top" alt="image">
        <div class="card-body">
-         <h5 class="card-title">${label}</h5>
+         <h5 class="card-title h5Result">${label}</h5>
          <div class="mb-5 d-flex justify-content-around">
-               <h3>${kcal} kcal</h3>
-         <button id='goToRecipe' class="btn btn-primary" onclick="showRecipe('${url}')">View Recipe</button>
+               <h6 class="h6Result">${kcal} kcal</h6>
+         <button id='goToRecipeBtn' class="btn btn-primary" onclick="showRecipe('${url}')">View Recipe</button>
          <script>
            function showRecipe(id) {
                localStorage.setItem("id", JSON.stringify(id));

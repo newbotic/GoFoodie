@@ -158,3 +158,23 @@ footer {
 }
 
 
+/*Recipe Cards */
+.h5Result {
+  color: #1A0933
+}
+
+.h6Result {
+  color: #1a093394
+}
+
+#goToRecipeBtn {
+  background-color: #6F42C1;
+  border-color: #6F42C1;
+}
+
+#goToRecipeBtn:hover {
+  background-color: #563d7c; 
+  border-color: #563d7c; 
+}
+
+
