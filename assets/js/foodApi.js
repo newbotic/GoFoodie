@@ -145,21 +145,20 @@ $(document).ready(function () {
                     ingredients = recipe.recipe.ingredientLines
                     label = recipe.recipe.label;
                     image = recipe.recipe.image;
-                    uri = recipe.recipe.uri;
+                    url = recipe.recipe.url;
                     kcal = Math.round(recipe.recipe.calories);
-                    function createDiv(label, image, uri, kcal) {
+                    function createDiv(label, image, url, kcal) {
                         return `<div class="card m-3" style="width: 18rem;">
        <img src="${image}" class="card-img-top" alt="image">
        <div class="card-body">
          <h5 class="card-title">${label}</h5>
          <div class="mb-5 d-flex justify-content-around">
-               <h3>${kcal}</h3>
-
-         <button id='goToRecipe' class="btn btn-primary" onclick="showRecipe('${uri}')">View Recipe</button>
+               <h3>${kcal} kcal</h3>
+         <button id='goToRecipe' class="btn btn-primary" onclick="showRecipe('${url}')">View Recipe</button>
          <script>
            function showRecipe(id) {
                localStorage.setItem("id", JSON.stringify(id));
-               window.location.href = "recipe.html";
+               window.open(url);
                console.log(id)
            };
          </script>
@@ -175,7 +174,6 @@ $(document).ready(function () {
                         console.error("Error:", error);
                     });
             });
-
 
         })});
 
