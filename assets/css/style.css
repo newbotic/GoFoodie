@@ -139,6 +139,25 @@ footer {
 /* style theme */
 
 /* food api style starts */
+#foodie-container {
+  position: relative;
+  color: black;
+  padding: 20px;
+}
+
+#search-bckgrnd-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pexels-lisa-fotios-1279330.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.8;
+}
 /*Foodie button Submit */
 #submitBtnFoodie {
   background-color: #6f42c1;
@@ -161,11 +180,11 @@ footer {
 
 /*Recipe Cards */
 .h5Result {
-  color: #1a0933;
+  color: #32FBE2;
 }
 
 .h6Result {
-  color: #1a093394;
+  color: #32FBE2;
 }
 
 #goToRecipeBtn {
