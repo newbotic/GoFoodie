@@ -11,9 +11,18 @@
   background-color: rgb(235, 235, 235);
 }
 
-#renderBmrDiv {
-  background-color: yellow;
+
+.card-body {
+    background-color: #1a0933;
+    color: aqua;
+    padding: 30px;
 }
+
+.card-body-calorie-goal {
+
+    padding: 30px;
+}
+
 
 #bmrCard {
   display: none;
