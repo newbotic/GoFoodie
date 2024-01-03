@@ -96,5 +96,6 @@ $(document).ready(function() {
     //goals["Extreme weight gain"].calory
 
     // save data to local storage
-
+    let calorieGoal= $("#calorieValue").val()
+    let storedCalories = localStorage.setItem("Calorie", JSON.stringify(calorieGoal))
     

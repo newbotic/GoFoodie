@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
 
+    let bmr= JSON.parse(localStorage.getItem("storedCalories"));
+    console.log(bmr);
     //set variables
     localStorage.setItem("app_id", "1f05a08d");
     localStorage.setItem("app_key", "a614fb15c7618687c8cd2382d7a980a9");
