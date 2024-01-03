@@ -141,6 +141,11 @@ footer {
 /* style theme */
 
 /* food api style starts */
+#foodie-container {
+  position: relative;
+  color: black;
+  padding: 20px;
+}
 /*Foodie button Submit */
 #submitBtnFoodie {
   background-color: #6f42c1;
