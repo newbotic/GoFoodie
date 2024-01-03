@@ -101,8 +101,9 @@ footer {
         justify-content: space-evenly;
     }
 
-#scroll {
+#content1 {
     margin-top: 1000px;
+    background-color: #563d7c;
 }
 
 /* Change the color of the radio button */
