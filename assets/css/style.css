@@ -151,7 +151,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/Fitz-Healthy-Life-Food.png");
+  background-image: url("../images/pexels-lisa-fotios-1279330.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -180,11 +180,11 @@ footer {
 
 /*Recipe Cards */
 .h5Result {
-  color: #1a0933;
+  color: #32FBE2;
 }
 
 .h6Result {
-  color: #1a093394;
+  color: #32FBE2;
 }
 
 #goToRecipeBtn {
