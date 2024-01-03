@@ -12,11 +12,30 @@
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
     integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 </head>
+
+<style>
+  .btn {
+    background-color: #6f42c1;
+    border-color: #6f42c1
+  }
+
+  .container-btn {
+    text-align: center;
+  }
+
+  .form-label {
+    font-family: 'Montserrat', sans-serif;
+  }
+</style>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -81,22 +100,24 @@
           1 apple
           1 egg " name="recipe" cols="30" rows="4"></textarea>
         </div>
-        <button class="btn btn-primary">Submit recipe</button>
-        <button class="btn btn-primary">Clear recipe</button>
+        <div class="container-btn">
+          <button class="btn btn-primary">Submit recipe</button>
+          <button class="btn btn-primary">Clear recipe</button>
+        </div>
       </form>
     </div>
     <!-- <div class="row mt-3" id="output" ></div> -->
   </div>
 
   <!-- input analysis  end -->
-<!-- display the local stored data start -->
-<div  class="container-fluid" >
-  <div id="goalCaloriesDiv"  ></div>
-  <button id="renderHistoryDataBtn">Display History Goals</button>
+  <!-- display the local stored data start -->
+  <div class="container-fluid">
+    <div id="goalCaloriesDiv"></div>
+    <button id="renderHistoryDataBtn">Display History Goals</button>
 
-</div>
+  </div>
 
-<!--display the local stored data start end -->
+  <!--display the local stored data start end -->
   <!-- canvas element to display chart start -->
   <canvas id="myChart" width="100" height="70"></canvas>
 
