@@ -37,9 +37,9 @@ ul {
 }
 
 footer {
+  padding: 50px;
+  margin: 50px;
   background-color: #f8f9fa;
-    padding: 50px;
-    margin: 50px;
 }
 
 #foodsis-container {
@@ -88,7 +88,7 @@ footer {
   padding-top: 1%;
 }
 
-
+/* style foodis end */
     @media (max-width: 767px) {
         #foodsis-container {
             padding: 10px;
@@ -105,6 +105,30 @@ footer {
     margin-top: 1000px;
 }
 
+/* Change the color of the radio button */
+.form-check-input:checked {
+    background-color: #6F42C1;
+    border-color: #6F42C1;
+}
+
+/* Change the color of the radio button's dot (indicator) */
+.form-check-input:checked::before {
+    background-color: #6F42C1; 
+    border-color: #6F42C1; 
+}
+
+/* Change the color of the button */
+#submitBtnBmr {
+    background-color: #6F42C1;
+    border-color: #6F42C1;
+}
+
+/* Change the color of the button on hover */
+#submitBtnBmr:hover {
+    background-color: #563d7c; 
+    border-color: #563d7c; 
+}
+  
     /* style foodis end */
 
 

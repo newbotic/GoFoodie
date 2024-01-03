@@ -56,52 +56,26 @@
     <!-- grid start -->
     <div class="container text-center">
       <div class="row">
+
         <div class="col">
-
+          
           Column1
-          <!-- input activity, weight and duration start -->
-          <!-- input activity  start-->
-          <div class="container-fluid input-activity">
-            <!-- <div class="form-group">
-      <label for="weight">Activity</label>
-      <input type="text" class="form-control" placeholder=" " id="activity" name="activity" required>
-    </div> -->
-            <!-- input activity end -->
-            <!-- input weight in kg and must be transformed in pounds start-->
-            <!-- <div class="form-group">
-      <label for="weight">weight in kg</label>
-      <input type="text" class="form-control" placeholder=" " id="weightKg" name="weightKg" required>
-    </div> -->
-            <!-- input weight end -->
-            <!-- input duration start -->
-            <!-- <div class="form-group">
-      <label for="weight">Duration in hours</label>
-      <input type="text" class="form-control" placeholder=" " id="durationHour" name="durationMin" required>
-    </div> -->
-
-            <!-- input duration end -->
-            <!-- <button type="button" class="btn btn-primary" id="submitActivity">Search</button> -->
-
-            <!-- input weight end -->
-
-          </div> <!-- KEEP THIS CLOSING DIV FOR COLUMN 1 CONTAINER -->
-
-          <!-- render  the burned calories start-->
-          <!-- <div class="card m-5">
-    <div class="card-body">
-      <div id="caloriesBurnedDiv" class="m-1"></div>
-    </div>
-  </div> -->
-
-
-          <!-- render the burned calories stop -->
-
+          
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/images/enteryourbmiImage.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Calculate Calorie Goal</h5>
+              <p class="card-text">Enter your stats in our calorie calculator and create a calorie goal based on wight loss or weight gain. We'll do the rest!</p>
+             
+            </div>
+          </div>            
         </div>
 
-        <div class="col">
+        <div class="col border border-primary rounded">
           Column2
           <!-- bmr input form start testmsg -->
           <div class="container mt-5">
+            <h5 class="card-title mb-4">Stats Calculator </h5>
             <form id="form">
               <div class="form-check m-1">
                 <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioLose">
@@ -155,7 +129,7 @@
                 </select>
               </div>
 
-              <button onclick="save()" type="button" class="btn btn-primary" id="submitBtnBmr">Search</button>
+              <button onclick="save()" type="button" class="btn btn-primary" id="submitBtnBmr">Calculate</button>
             </form>
 
           </div>
