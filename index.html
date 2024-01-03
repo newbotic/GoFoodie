@@ -11,14 +11,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
-      #content1 {
-    margin-top: 1000px;
-}
+   
+    #content1
+    {
+    margin-top: 100px;
+    }
+
     #content1,
     #content3 {
-    background-color: #563d7c;
-    color: aqua;
-}
+      background-color: #563d7c;
+      color: aqua;
+    }
+
     /* Change the color of all buttons */
     .btn {
       background-color: #6F42C1;
@@ -27,9 +31,41 @@
 
     /* Change the color of all buttons on hover */
     .btn:hover {
-      background-color: #563d7c; 
-      border-color: #563d7c; 
+      background-color: #563d7c;
+      border-color: #563d7c;
     }
+
+    ul {
+  list-style: none; /* Removes default list styles (bullets) */
+  padding: 0; /* Removes default padding */
+}
+
+
+
+ul a {
+  text-decoration: none; /* Remove underline for links */
+  color: #1A0933; /* Set the text color for links */
+  transition: color 0.3s; /* smoothen transition effect for color change */
+}
+
+ul a:hover {
+  color: #6F42C1
+}
+
+.single-box a {
+  color: #807d87;
+  transition: color 0.3s; 
+}
+
+.single-box a:hover {
+  color: #6F42C1; 
+}
+
+#footer-contact-text {
+  color: #807d87;
+}
+
+
   </style>
 </head>
 
@@ -69,13 +105,15 @@
   </nav>
   <!-- nav bar end -->
 
-  
-    <!-- Hero Section start-->
-    <div class="hero-container-style" style="background-image: url('/assets/images/19303.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100vh;">
-      <h1 class="visually-hidden">Heroes examples</h1>
 
-      <div class="px-4 py-5 my-5 text-center mb-19" style="background-color: rgba(255, 255, 255, 0.7); margin-top: 3rem; margin-bottom: 1rem;">
-        <!-- <img class="d-block mx-auto mb-4" src="/assets/images/GoFoo" alt="" width="172" height="172"> -->
+  <!-- Hero Section start-->
+  <div class="hero-container-style"
+    style="background-image: url('/assets/images/19303.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100vh;">
+    <h1 class="visually-hidden">Heroes examples</h1>
+
+    <div class="px-4 py-5 my-5 text-center mb-19"
+      style="background-color: rgba(255, 255, 255, 0.7); margin-top: 3rem; margin-bottom: 1rem;">
+      <!-- <img class="d-block mx-auto mb-4" src="/assets/images/GoFoo" alt="" width="172" height="172"> -->
       <h1 class="display-5 fw-bold">We're GoFoodie..</h1>
       <div class="col-lg-6 mx-auto">
         <h2 class="lead mb-4">It's More Than a Meal, It's a Movement!</h2>
@@ -90,9 +128,9 @@
   </div>
   <!--Hero Section end -->
 
-<!-- Content section 1-->
-<section id="content1">
-  <div class="container px-5" style="margin-top: 90px;">
+  <!-- Content section 1-->
+  <section id="content1">
+    <div class="container px-5" style="margin-top: 90px;">
       <div class="row gx-5 align-items-center">
         <div class="col-lg-6 order-lg-2">
           <div class="p-5"><img class="img-fluid rounded-circle" src="./assets/images/Square-8.jpg" alt="..." /></div>
@@ -112,159 +150,47 @@
   <section id="content2">
     <div class="container px-5">
       <div class="row gx-5 align-items-center">
-          <!-- Updated order-lg classes to swap the containers -->
-          <div class="col-lg-6 order-lg-1">
-              <div class="p-5"><img class="img-fluid rounded-circle" src="./assets/images/Square-11.jpg" alt="..."></div>
-          </div>
-          <div class="col-lg-6 order-lg-2">
-              <div class="p-5">
-                  <h2 class="display-4">For those who love food...</h2>
-                  <p>Do you love to eat delicious recipes while making sure your calories are in check? Find delicious meals based on your calorie needs and goals!</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<!-- Content section 3 'See how it works'-->
-<section id="content3">
-  <div class="container px-5">
-      <div class="row gx-5 align-items-center">
-          <div class="col-lg-6 order-lg-2">
-              <div class="p-5"><img class="img-fluid rounded-circle" src="./assets/images/handsOnLaptop.jgp.png" alt="..." /></div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-              <div class="p-5">
-                  <h2 class="display-4">Wanna see how it works? </h2>
-                  <p>Empower Your Plate, Empower Your Workout: GoFoodie Leads the Way!</p>
-                  <a class="btn btn-primary btn-xl rounded-pill mt-1" href="about.html">Learn More</a>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-
-
-
-  <!-- bmr input form start will add these to another page-->
-  <!-- 
-        <div class="container-fluid mt-5">
-          <form id="form">
-            <div class="form-check m-1">
-              <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Lose weight
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input m-1" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label " for="flexRadioDefault2">
-                Gain weight
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label for="age">Age</label>
-              <input type="text" class="form-control" id="age" name="age" required>
-            </div>
-
-            <div class="form-group">
-              <label for="gender">Gender</label>
-              <select class="form-control" id="gender" name="gender" required>
-                <option value="">Select gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="weight">Weight</label>
-              <input type="text" class="form-control" placeholder="0 .. max80" id="weight" name="weight" required>
-            </div>
-
-            <div class="form-group">
-              <label for="height">Height</label>
-              <input type="text" class="form-control" id="height" name="height" required>
-            </div>
-
-            <div class="form-group">
-              <label for="activitylevel">Activity Level</label>
-              <select class="form-control" id="activitylevel" name="activitylevel">
-                <option value="">Select Activity Level</option>
-                <option value="level_1">Sedentary: little or no exercise</option>
-                <option value="level_2">Exercise 1-3 times/week</option>
-                <option value="level_3">Exercise 4-5 times/week</option>
-                <option value="level_4">Daily exercise or intense exercise 3-4 times/week</option>
-                <option value="level_5">Intense exercise 6-7 times/week</option>
-                <option value="level_6">Very intense exercise daily, or physical job</option>
-              </select>
-            </div>
-
-            <button type="button" class="btn btn-primary" id="submitBtnBmr">Search</button>
-          </form>
-
+        <!-- Updated order-lg classes to swap the containers -->
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5"><img class="img-fluid rounded-circle" src="./assets/images/Square-11.jpg" alt="..."></div>
         </div>
-
-        </select>
-
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <h2 class="display-4">For those who love food...</h2>
+            <p>Do you love to eat delicious recipes while making sure your calories are in check? Find delicious meals
+              based on your calorie needs and goals!</p>
+          </div>
+        </div>
       </div>
-
-      <!bmr form input end -->
-  <!-- </div> -->
-  <!-- right column end -->
-
-
-  <!-- render bmr, calories start -->
-  <!-- <div class="card m-5">
-      <div class="card-body">
-        <div id="renderBmrDiv" class="m-1 "></div>
-        <div id="caloriesBurnedDiv" class="m-1"></div>
-     </div>
-    </div> -->
-  <!-- render bmr, calories end -->
-
-  <!-- </div>
-  </div> -->
-  <!-- grid end -->
-
-
-
-
-  <!-- search food start
-  <div class="input-group m-5 p-5">
-    <input id="recipeReqCal" type="search" class="form-control rounded" placeholder="Search recipe" aria-label="Search"
-      aria-describedby="search-addon" />
-    <button id="search-recipe" type="button" class="btn btn-outline-primary" data-mdb-ripple-init>search</button>
-  </div> -->
-  <!-- search food end -->
-
-
-  <!-- card render food start -->
-
-  <!-- <div id="content-recipe" class="card m-5" style="width: 18rem;">
-    <img id="card-image" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 id="card-title" class="card-title">Card title</h5>
-      <p id="card-text" class="card-text">Some quick example text to build on the card title and make up the bulk of the
-        card's content.</p>
-      <a id="card-link" href="${data.hits[0].recipe.uri}" class="btn btn-primary">Go somewhere</a>
-      <a id="card-recipe" href="${data.hits[0].recipe.url}" class="btn btn-primary">Get recipe</a>
-
     </div>
-  </div> -->
+  </section>
 
-  <!-- card render food end -->
-
-  <!-- grid end -->
+  <!-- Content section 3 'See how it works'-->
+  <section id="content3">
+    <div class="container px-5">
+      <div class="row gx-5 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5"><img class="img-fluid rounded-circle" src="./assets/images/handsOnLaptop.jgp.png"
+              alt="..." /></div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Wanna see how it works? </h2>
+            <p>Empower Your Plate, Empower Your Workout: GoFoodie Leads the Way!</p>
+            <a class="btn btn-primary btn-xl rounded-pill mt-1" href="about.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- footer start -->
   <footer>
-    <div class="container bg-light">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-lg-3 col-sm-6">
-          <div class="single-box">
+          <div class="single-box mt-3">
             <h6>Links</h6>
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -276,17 +202,17 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6 mt-3">
           <div class="single-box">
             <h6>Contact</h6>
-            <p>GoFoodie<br>
+            <p id="footer-contact-text">GoFoodie<br>
               100 High Street<br>
               NW10 10NW<br>
               London
             </p>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6 mt-3">
           <div class="single-box">
             <h6>Follow us on</h6>
             <p class="socials">
