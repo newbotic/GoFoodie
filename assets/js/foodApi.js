@@ -42,7 +42,7 @@ $(document).ready(function () {
        </div>`
                 }
                 recipeDiv= createDiv(label, image, url, caloriePortion)
-                results.append(recipeDiv);
+                results.prepend(recipeDiv);
                 $("[data-url]").on('click', function(event){
                     console.log(event.target.dataset)
                     window.open(event.target.dataset.url)
