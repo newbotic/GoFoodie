@@ -140,7 +140,7 @@ $(document).ready(function () {
             }).then(function (data) {
                 console.log(data);
                 console.log(data.hits[0].recipe.calories)
-                // dynamicall create html element for each recipe result
+                // dynamically create html element for each recipe result
                 data.hits.forEach((recipe) => {
                     ingredients = recipe.recipe.ingredientLines
                     label = recipe.recipe.label;
