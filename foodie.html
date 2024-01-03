@@ -9,9 +9,10 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -63,6 +64,14 @@
   <div class="p-3">
       <button type="button" class="btn btn-primary"  id="submitBtnFoodie" >Search Recipies!</button>
   </div>
+  <!-- display the local stored data start -->
+  <div class="container-fluid">
+    <div id="goalCaloriesDiv"></div>
+    <button id="renderHistoryDataBtn">Display History Goals</button>
+
+  </div>
+
+  <!--display the local stored data start end -->
   <div class="container-fluid d-flex row justify-content-evenly" id="results">
   </div>
   <!-- search food end -->
