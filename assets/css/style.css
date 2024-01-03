@@ -89,89 +89,82 @@ footer {
 }
 
 /* style foodis end */
-    @media (max-width: 767px) {
-        #foodsis-container {
-            padding: 10px;
-        }
-    }
+@media (max-width: 767px) {
+  #foodsis-container {
+    padding: 10px;
+  }
+}
 
-    #foodsis-title > h6,
-    #foodsis-title > p {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-
+#foodsis-title > h6,
+#foodsis-title > p {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /* Change the color of the radio button */
 .form-check-input:checked {
-    background-color: #6F42C1;
-    border-color: #6F42C1;
+  background-color: #6f42c1;
+  border-color: #6f42c1;
 }
 
 /* Change the color of the radio button's dot (indicator) */
 .form-check-input:checked::before {
-    background-color: #6F42C1; 
-    border-color: #6F42C1; 
+  background-color: #6f42c1;
+  border-color: #6f42c1;
 }
 
 /* Change the color of the button */
 #submitBtnBmr {
-    background-color: #6F42C1;
-    border-color: #6F42C1;
+  background-color: #6f42c1;
+  border-color: #6f42c1;
 }
 
 /* Change the color of the button on hover */
 #submitBtnBmr:hover {
-    background-color: #563d7c; 
-    border-color: #563d7c; 
+  background-color: #563d7c;
+  border-color: #563d7c;
 }
-  
-    /* style foodis end */
 
+/* style foodis end */
 
-    /* style theme */
+/* style theme */
 
 /* food api style starts */
 /*Foodie button Submit */
 #submitBtnFoodie {
-  background-color: #6F42C1;
-  border-color: #6F42C1;
+  background-color: #6f42c1;
+  border-color: #6f42c1;
 }
 
 #submitBtnFoodie:hover {
-  background-color: #563d7c; 
-  border-color: #563d7c; 
+  background-color: #563d7c;
+  border-color: #563d7c;
 }
 
 /*Search Bar*/
 #h1Foodie {
-  color: #1A0933
-
+  color: #1a0933;
 }
 
 #h3Foodie {
-  color: #1A0933 
+  color: #1a0933;
 }
-
 
 /*Recipe Cards */
 .h5Result {
-  color: #1A0933
+  color: #1a0933;
 }
 
 .h6Result {
-  color: #1a093394
+  color: #1a093394;
 }
 
 #goToRecipeBtn {
-  background-color: #6F42C1;
-  border-color: #6F42C1;
+  background-color: #6f42c1;
+  border-color: #6f42c1;
 }
 
 #goToRecipeBtn:hover {
-  background-color: #563d7c; 
-  border-color: #563d7c; 
+  background-color: #563d7c;
+  border-color: #563d7c;
 }
-
-
