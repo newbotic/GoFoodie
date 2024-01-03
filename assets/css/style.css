@@ -200,3 +200,27 @@ p {
 .form-group {
   font-family: "Lato", sans-serif;
 }
+
+/* Footer styling */
+ul a {
+    text-decoration: none; /* Remove underline for links */
+    color: #1A0933; /* Set the text color for links */
+    transition: color 0.3s; /* smoothen transition effect for color change */
+  }
+  
+  ul a:hover {
+    color: #6F42C1
+  }
+  
+  .single-box a {
+    color: #807d87;
+    transition: color 0.3s; 
+  }
+  
+  .single-box a:hover {
+    color: #6F42C1; 
+  }
+  
+  #footer-contact-text {
+    color: #807d87;
+  }
