@@ -135,4 +135,26 @@ footer {
 
     /* style theme */
 
+/* food api style starts */
+/*Foodie button Submit */
+#submitBtnFoodie {
+  background-color: #6F42C1;
+  border-color: #6F42C1;
+}
+
+#submitBtnFoodie:hover {
+  background-color: #563d7c; 
+  border-color: #563d7c; 
+}
+
+/*Search Bar*/
+#h1Foodie {
+  color: #1A0933
+
+}
+
+#h3Foodie {
+  color: #1A0933 
+}
+
 

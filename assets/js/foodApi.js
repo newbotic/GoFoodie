@@ -114,7 +114,7 @@ $(document).ready(function () {
     var uri = "";
 
     // event listener to click on search button
-    $("#submitBtn").click(function (event) {
+    $("#submitBtnFoodie").click(function (event) {
         event.preventDefault();
         console.log("submit!");
 
