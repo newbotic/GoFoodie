@@ -86,6 +86,7 @@
     </div>
   </nav>
 
+  
   <div id="foodsis-title">
   </div>
 
@@ -97,43 +98,66 @@
 
   <!-- Description -->
 
-  <h6 class="mx-5">How it works:</h6>
+  <div class="container py-4">
+    <div class="row">
+        <!-- Column for images -->
+        <div class="col-md-2 col-sm-6">
+            <div class="container-fluid">
+                <img src="./assets/images/Fitz Home Workout.png" alt="Image 1" class="img-fluid d-block">
+            </div>
+            <div class="container-fluid">
+                <img src="./assets/images/Fitz Hoops.png" alt="Image 2" class="img-fluid d-block p-3">
+            </div>
+            <div class="container-fluid">
+                <img src="./assets/images/Fitz Outdoor Training.png" alt="Image 3" class="img-fluid d-block">
+            </div>
+            <div class="container-fluid">
+                <img src="./assets/images/Fitz Online Sports stats.png" alt="Image 4" class="img-fluid d-block p-3">
+            </div>
+        </div>
 
-  <p  class="mx-5" > Simply input the food or meal you're planning to eat. Whether it's chicken, apples, or any other ingredient, our
-    tool will provide you with a comprehensive breakdown of its macronutrients and essential components.</p>
+        <!-- Column for text content -->
+        <div class="col-md-10 col-sm-6">
+            <div class="container-fluid">
+                <h6>How it works:</h6>
+                <p>Simply input the food or meal you're planning to eat. Whether it's chicken, apples, or any other ingredient, our tool will provide you with a comprehensive breakdown of its macronutrients and essential components.</p>
+            </div>
 
-  <h6 class="mx-5" >What you'll discover:</h6>
+            <div class="container-fluid">
+                <h6>What you'll discover:</h6>
+                <p>Macronutrients: Find out the protein, carbohydrates, and fats content in your food. Vitamins and Minerals: Explore the presence of essential vitamins (like Vitamin A, C, D) and minerals (such as iron, calcium) in your meal. Cholesterol and Fatty Acids: Understand the cholesterol levels and different types of fats present.</p>
+            </div>
 
-  <p class="mx-5"  >Macronutrients: Find out the protein, carbohydrates, and fats content in your food.
-    Vitamins and Minerals: Explore the presence of essential vitamins (like Vitamin A, C, D) and minerals (such as iron,
-    calcium) in your meal.
-    Cholesterol and Fatty Acids: Understand the cholesterol levels and different types of fats present. </p>
+            <div class="container-fluid">
+                <h6> Why use our Food Analysis Tool:</h6>
+                <p>Make Informed Choices: Understand the nutritional composition of your meal to make informed dietary decisions. Personalized Health: Tailor your diet by knowing the exact nutrients present in the foods you consume. Enhance Wellness: Use this tool to support your wellness journey and achieve your health goals.</p>
+            </div>
 
-  <h6 class="mx-5" > Why use our Food Analysis Tool:</h6>
+            <div class="container-fluid">
+                <h6>Get started:</h6>
+                <p>Simply type in the food you're planning to eat and let our tool provide you with a detailed breakdown of its nutritional components. Empower yourself with knowledge about what's on your plate!</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <p  class="mx-5" > Make Informed Choices: Understand the nutritional composition of your meal to make informed dietary decisions.
-    Personalized Health: Tailor your diet by knowing the exact nutrients present in the foods you consume.
-    Enhance Wellness: Use this tool to support your wellness journey and achieve your health goals.</p>
 
-  <h6 class="mx-5" >Get started:</h6>
-
-  <p class="mx-5" >Simply type in the food you're planning to eat and let our tool provide you with a detailed breakdown of its
-    nutritional components. Empower yourself with knowledge about what's on your plate!</p>
-
+  
+  
   <!-- Description End -->
 
 
   <!-- input analysis start -->
-  <div id="foodsis-container" class="container  mt-3">
+  <div id="foodsis-container" class="container  mt-3 p-3">
     <div id="background-image"></div>
     <div class="row">
       <form id="recipe-check-form" class="col-lg-6">
         <div class="mb-3">
-          <label for="title" class="form-label">Title</label>
+          <label for="title" class="form-label">Name Your Meal</label>
           <input type="text" class="form-control" id="title" name="title" />
         </div>
         <div class="mb-3">
-          <label for="recipe" class="form-label">Recipe</label>
+          <label for="recipe" class="form-label">Enter your Recipe</label>
           <textarea name="form-control" id="recipe" placeholder="enter full recipe or individual ingredient e.g.
           1 apple
           1 egg " name="recipe" cols="30" rows="4"></textarea>
