@@ -21,6 +21,19 @@
      h3 {
       font-family: 'Lato', sans-serif;
     }
+
+    #renderHistoryDataBtn {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    border-radius: 12%;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+  }
     </style>
 
 </head>
@@ -80,11 +93,11 @@
         <h1 id="h1Foodie" class="p-3 bg text">Recipe Search</h1>
         <h3 id="h3Foodie" class="p-3 text">Please tell me what you want to cook today:</h3>
         <div class="container-fluid">
-          <input class="form-control w-50 p-3" type="text" placeholder="What do you want to cook today?" onfocus="this.value=''" id="ingredient">
+          <input class="form-control w-75 p-3" type="text" placeholder="What do you want to cook today?" onfocus="this.value=''" id="ingredient">
         </div>
         <h3 id="h3Foodie" class="p-3 text">Now tell me how many calories you need for your meal:</h3>
         <div class="container-fluid">
-          <input class="form-control w-50 p-3" type="text" placeholder="How many calories?" onfocus="this.value=''" id="calories">
+          <input class="form-control w-75 p-3" type="text" placeholder="How many calories?" onfocus="this.value=''" id="calories">
         </div>
         <div class="p-3">
           <button type="button" class="btn btn-primary" id="submitBtnFoodie">Search Recipes!</button>
@@ -97,7 +110,6 @@
   <div id="goalButtonDiv" class="container-fluid">
     <div id="goalCaloriesDiv"></div>
     <button id="renderHistoryDataBtn">Display Your Goals</button>
-
   </div>
   <!--display the local stored data start end -->
   <div class="container-fluid d-flex row justify-content-evenly" id="results">
