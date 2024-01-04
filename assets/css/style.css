@@ -250,3 +250,21 @@ ul a:hover {
 #footer-contact-text {
   color: #807d87;
 }
+
+/* style goalButtonDiv start */
+/* #renderHistoryDataBtn {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+#goalCaloriesDiv {
+  display: flex;
+  align-items: center;
+}
+#goalButtonDiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+/* style goalButtonDiv end */
