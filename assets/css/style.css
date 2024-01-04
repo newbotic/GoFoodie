@@ -171,20 +171,24 @@ footer {
 
 /*Search Bar*/
 #h1Foodie {
+  font-family: 'Montserrat', sans-serif;
   color: #1a0933;
 }
 
 #h3Foodie {
   color: #1a0933;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*Recipe Cards */
 .h5Result {
   color: #32FBE2;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .h6Result {
   color: #32FBE2;
+  font-family: 'Lato', sans-serif;
 }
 
 #goToRecipeBtn {
