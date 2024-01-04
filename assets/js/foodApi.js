@@ -29,7 +29,7 @@ $(document).ready(function () {
                     kcal = Math.round(data.hits[i].recipe.calories);
                     servings = data.hits[i].recipe.yield;
                     caloriePortion = kcal/servings
-                                        
+                        // dynamically create recipe card                
                     function createDiv(label, image, url, caloriePortion) {
                         return `<div class="card m-3" style="width: 18rem;">
        <img src="${image}" class="card-img-top" alt="image">
