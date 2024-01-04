@@ -56,22 +56,32 @@
 
   <!-- food search start -->
 
-  <div id="foodie-container" class="container  mt-3">
-    <div id="search-bckgrnd-img"></div>
-  <h1 id="h1Foodie" class="p-3 bg text">Recipe Search</h1>
-  <h3 id="h3Foodie" class="p-3 text">Please tell me what you want to cook today:</h3>
-  <div class="container-fluid">
-    <input class="form-control w-50 p-3" type="text" placeholder="What do you want to cook today?"
-      onfocus="this.value=''" id="ingredient">
-  </div>
-  <h3 id="h3Foodie" class="p-3 text">Now tell me how many calories you need for your meal:</h3>
-  <div class="container-fluid">
-    <input class="form-control w-50 p-3" type="text" placeholder="How many calories?" onfocus="this.value=''"
-      id="calories">
-  </div>
-  <div class="p-3">
-    <button type="button" class="btn btn-primary" id="submitBtnFoodie">Search Recipies!</button>
-  </div>
+   <!-- food search start -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- New content column on the left -->
+      <div class="col-md-6">
+        <!-- Your new content goes here -->
+        <img src="./assets/images/Fitz-Healthy-Life-Food.png" alt="Your Image Alt Text" class="img-fluid p-3">
+    </div>
+  
+      <!-- Foodie container column on the right -->
+      <div id="foodie-container" class="col-md-6 mt-3">
+        <!-- Your current content goes here -->
+        <h1 id="h1Foodie" class="p-3 bg text">Recipe Search</h1>
+        <h3 id="h3Foodie" class="p-3 text">Please tell me what you want to cook today:</h3>
+        <div class="container-fluid">
+          <input class="form-control w-50 p-3" type="text" placeholder="What do you want to cook today?" onfocus="this.value=''" id="ingredient">
+        </div>
+        <h3 id="h3Foodie" class="p-3 text">Now tell me how many calories you need for your meal:</h3>
+        <div class="container-fluid">
+          <input class="form-control w-50 p-3" type="text" placeholder="How many calories?" onfocus="this.value=''" id="calories">
+        </div>
+        <div class="p-3">
+          <button type="button" class="btn btn-primary" id="submitBtnFoodie">Search Recipes!</button>
+        </div>
+      </div>
+    </div>
   </div>
   
   <!-- display the local stored data start -->
