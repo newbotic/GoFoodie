@@ -30,8 +30,7 @@ Additionally, GoFoodie provides an extensive collection of recipes aligned with 
 "At GoFoodie, our mission is to revolutionize the way individuals approach nutrition and health. We aim to deliver a user-centric platform that offers tailored calorie tracking solutions, guiding users on their unique fitness journeys. Through a curated collection of recipes aligned with users' calorie objectives, we strive to simplify meal planning and foster a culture of balanced, mindful eating. By promoting accessibility and empowerment, we seek to make healthy living an intuitive and rewarding experience for all."
 
 ## Screenshot
-
-[screenshot/images of the website will go here]
+![Alt text]("./assets/images/screencapture-newbotic-github-io-GoFoodie-2024-01-04-19_44_18.png")
 
 ## Link to Deployed Website
 
