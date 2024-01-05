@@ -23,13 +23,14 @@ Additionally, GoFoodie provides an extensive collection of recipes aligned with 
 
 ## Vision:
 
-"To redefine health and wellness through personalized nutrition guidance, GoFoodie envisions a world where individuals seamlessly achieve their fitness goals with a deeper understanding of their dietary needs. We aspire to empower users to make informed choices by providing a platform that not only tracks calorie intake but also inspires a lifestyle centered around nourishing, enjoyable meals."
+To redefine health and wellness through personalized nutrition guidance, GoFoodie envisions a world where individuals seamlessly achieve their fitness goals with a deeper understanding of their dietary needs. We aspire to empower users to make informed choices by providing a platform that not only tracks calorie intake but also inspires a lifestyle centered around nourishing, enjoyable meals.
 
 ## Mission:
 
-"At GoFoodie, our mission is to revolutionize the way individuals approach nutrition and health. We aim to deliver a user-centric platform that offers tailored calorie tracking solutions, guiding users on their unique fitness journeys. Through a curated collection of recipes aligned with users' calorie objectives, we strive to simplify meal planning and foster a culture of balanced, mindful eating. By promoting accessibility and empowerment, we seek to make healthy living an intuitive and rewarding experience for all."
+At GoFoodie, our mission is to revolutionize the way individuals approach nutrition and health. We aim to deliver a user-centric platform that offers tailored calorie tracking solutions, guiding users on their unique fitness journeys. Through a curated collection of recipes aligned with users' calorie objectives, we strive to simplify meal planning and foster a culture of balanced, mindful eating. By promoting accessibility and empowerment, we seek to make healthy living an intuitive and rewarding experience for all.
 
 ## Screenshot
+
 ![Screenshot](./assets/images/screencapture-newbotic-github-io-GoFoodie-2024-01-04-19_44_18.png)
 
 ## Link to Deployed Website
@@ -52,6 +53,11 @@ To set up this project locally, follow these steps:
 
 Clone this repository: git clone https://github.com/newbotic/GoFoodie.git
 Open the project folder in your code editor.
+
+## Presentation
+
+The presentation notes for the GoFoodie project can be found here:
+https://shorturl.at/iMX37
 
 ## User Story
 
